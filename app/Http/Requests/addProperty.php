@@ -24,7 +24,7 @@ class addProperty extends Request {
 		return [
 			'title'=> 'required',
 			'email' => 'required|email|exists:landlords,email',
-			'images[]' => 'required|image',
+			'images[]' => 'image',
 			'address' => 'required',
 			'description' => 'required',
 			'amenities' => 'required',

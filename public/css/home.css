@@ -975,3 +975,16 @@ margin-right: 20px;
     left: 30px;
     width: auto !important;
 }
+
+.pricecell{
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px !important; 
+    padding: 5px 10px 5px 10px !important;
+    display: inline-block;
+    background-color:#53b9d1 !important; 
+    position: relative;
+    top:60px;
+    left: 60px;
+    width: auto !important;
+}

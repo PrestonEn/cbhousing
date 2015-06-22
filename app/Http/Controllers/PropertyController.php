@@ -12,6 +12,8 @@ use DB;
 use Carbon\Carbon;
 use App\Property;
 use App\Landlord;
+use App\Posting;
+use App\ApartmentProperty;
 
 
 class PropertyController extends Controller {
@@ -25,7 +27,21 @@ class PropertyController extends Controller {
 	{
 		$pages = Property::paginate(12);
 
-		return view('/postings')->with('pages',$pages);
+		foreach ($pages as $house) {
+			if($house->property_type == 'apartment'){
+				$apts = ApartmentProperty::where('property_id','=',$house->id)->get();
+				$count = 0;
+				foreach ($apts as $apt) {
+					$count += ($apt->total - $apt->filled);
+				}
+				$data[$house->id] = $count;
+			}else{
+				$data[$house->id] = $house->rooms;
+			}
+		}
+		$data['pages'] = $pages;
+		
+		return view('/postings')->with('data',$data);
 	}
 
 	/**

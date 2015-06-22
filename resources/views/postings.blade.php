@@ -14,7 +14,7 @@
 	    <div class="container">
             <div class="row">
 <?php $flag = true; ?>
-@foreach($pages as $property)
+@foreach($data['pages'] as $property)
 @if($property->rooms>0)
 <?php if($flag){
     $class = "even";
@@ -22,6 +22,7 @@
     $class = "odd";
 } ?>
                 <div class="col-md-4 col-sm-6 property-item">
+                                        <h5 class="pricecell">{{$data[$property->id]}} rooms</h5>
                     @if($flag)
                         <div class="inner bluebox">
                     @else
@@ -30,6 +31,7 @@
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <img src="/{{$property->thumbnail}}" class="img-responsive port-img" alt="">
                     </a>
+
 
                     <div class="portfolio-caption">
                         <a href="{{url('properties/'.$property->id)}}">
@@ -48,7 +50,7 @@
 
 <div class="row paginator-links">
     <div class="paginator-links">
-        {!! $pages->render() !!}
+        {!! $data['pages']->render() !!}
     </div>
 </div>
 

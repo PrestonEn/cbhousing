@@ -11,6 +11,7 @@ use App\Posting;
 use App\Addon;
 use App\BookRequest;
 use App\RequestCart;
+use App\ApartmentProperty;
 use Illuminate\Http\Request;
 
 class RequestController extends Controller {
@@ -72,8 +73,20 @@ class RequestController extends Controller {
 		if($posting->locked){
 			return redirect('errors/firstComeFirstServer');
 		}
-		$posting->locked = true;
-		$posting->save();
+		$property = Property::findOrFail($posting->property_id);
+		if($property->property_type == 'apartment' && $posting->lock == false){
+			$apartments = ApartmentProperty::where('posting_id','=',$posting->id)->first();
+			DB::table('apartment_postings')->where('posting_id', $apartments->posting_id)
+			->increment('filled');
+			if($apartments->filled+1 == $apartments->total){
+				$posting->locked = true;
+				$posting->save();
+			}
+
+		}else{
+			$posting->locked = true;
+			$posting->save();
+		}
 		$sum = $posting->price * 2;
 		$booking = BookRequest::create(['user_id'=>$user->id,
 								'user_email'=>$user->email,

@@ -116,7 +116,6 @@ class PostingController extends Controller {
 	{
 		$data['p'] = Posting::findOrFail($id);
 		$data['images'] = DB::table('posting_images')->where('posting_id',$id)->get();
-		if()
 		return view('admin/updatePosting')->with('data', $data);
 	}
 

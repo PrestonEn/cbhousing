@@ -61,7 +61,7 @@
 
 				</div>
 				<div class="col-md-4 metric">
-					<div class="desc-fix"><h4>Minuets Walk to Transit</h4></div>
+					<div class="desc-fix"><h4>Minutes Walk to Transit</h4></div>
 					<img src="http://crossborderhousing.com/img/bus.png">
 					<h4>{{$data['property']->time_to_bus}}</h4>
 				</div>
