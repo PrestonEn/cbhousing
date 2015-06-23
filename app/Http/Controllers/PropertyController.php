@@ -93,7 +93,7 @@ class PropertyController extends Controller {
 
 	        		$destinationPath = 'uploads/'.$id.'_';
 			        $filename = $file->getClientOriginalName();
-			        $filename = $id.$filename;
+			      
 			        $upload_success = $file->move($destinationPath, $filename);
 			        $property_img = $destinationPath.'/'.$filename;//insert to property model
 			        if(!$flag){

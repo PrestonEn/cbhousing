@@ -2,7 +2,8 @@
 
 @section('content')
 
-@foreach()
+@foreach($data['requests'] as $req)
+	{{$req->user_id}}
 @endforeach
 
 <script type="text/javascript">

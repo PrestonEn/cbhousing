@@ -70,7 +70,7 @@ class PostingController extends Controller {
 	        $destinationPath = 'uploads/'.$input['property_id'].'/'.$id;
 
 	        $filename = $file->getClientOriginalName();
-	        $filename = $id.$filename;
+	       
 
 	        $upload_success = $file->move($destinationPath, $filename);
 	        
