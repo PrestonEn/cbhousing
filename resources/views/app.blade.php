@@ -122,7 +122,7 @@
             <a target="_blank" href="https://www.youtube.com/watch?v=FuZ3HQntTwc"><li><img src="{{ asset('/img/youtube.png') }}" alt=""></a>
         </ul>
         </div>
-        <hr width="80%" align="center" color="white">
+        <hr width="100%" align="center" color="white">
     </div>
 
     <div class='row'>
