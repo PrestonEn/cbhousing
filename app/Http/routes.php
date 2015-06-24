@@ -34,6 +34,10 @@ Route::get('/admin', 'AdminController@index');
 
 Route::get('/admin/requests', 'AdminController@requests');
 
+Route::post('/admin/requests/confirm/{id}')
+
+Route::post('/admin/requests/deny/{id}')
+
 Route::get('/admin/landlords', 'AdminController@landlords');
 
 Route::get('/admin/properties', 'AdminController@properties');
@@ -45,6 +49,7 @@ Route::post('/admin/addPropertyImg/{id}', 'AdminController@addPropertyImg');
 Route::post('/admin/addPostingImg/{id}', 'AdminController@addPostingImg');
 
 Route::get('/admin/updateLandlord/{id}', 'LandlordController@edit');
+
 
 
 Route::get('/admin/postings', 'AdminController@postings');

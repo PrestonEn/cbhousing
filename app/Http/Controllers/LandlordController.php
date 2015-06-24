@@ -41,10 +41,7 @@ class LandlordController extends Controller {
 	 */
 	public function store(addLandlord $request)
 	{ 
-		Mail::send('welcome', [] ,function($message)
-		{
-		    $message->to('p.engstrom94@gmail.com', 'John Smith')->subject('Welcome!');
-		});
+
 		$id = uniqid();
 		$input = Request::all();
 		Landlord::create(['id'=>$id, 'name'=> $input['name'], 'email'=>$input['email'], 'phone'=>$input['phone']]);

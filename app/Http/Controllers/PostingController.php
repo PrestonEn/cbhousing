@@ -10,7 +10,7 @@ use App\Http\Requests\addPosting;
 use DB;
 use Carbon\Carbon;
 use App\Posting;
-use App\property;
+use App\Property;
 
 class PostingController extends Controller {
 
@@ -128,6 +128,9 @@ class PostingController extends Controller {
 	public function update($id, Req $request)
 	{
 		$posting=Posting::findOrFail($id);
+
+
+
 		$posting->update($request->all());
 		return redirect('/admin/postings');		
 	}
