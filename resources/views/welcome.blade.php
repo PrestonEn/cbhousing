@@ -101,56 +101,64 @@
 
 <!-- easy transactions -->
 <section>
-
     <div class="section-heading">
         <div class="section-head">Secure transactions made easy.</div>
         <div class="section-sub">Pay online to secure your home, and pay in person during your stay.</div>
     </div>
     <div class="paypal">
-    <!-- PayPal Logo --><a href="https://www.paypal.com/ca/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/ca/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/en_CA/mktg/logo-image/pp_cc_mark_111x69.jpg" border="0" alt="PayPal Logo"></a><!-- PayPal Logo -->
+    <!-- PayPal Logo -->
+    <a href="https://www.paypal.com/ca/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/ca/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;">
+        <img src="https://www.paypalobjects.com/webstatic/en_CA/mktg/logo-image/pp_cc_mark_111x69.jpg" border="0" alt="PayPal Logo">
+    </a>
+    <!-- PayPal Logo -->
     </div>
 </section>
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-          <div class="section-heading color-overide">
-              <div class="section-head color-white">Welcome to the Family.</div>
-              <div class="section-sub color-white">The Cross Border Housing Community is here for you every step of the way.</div>
-          </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm"  action="contactus" method="post">
-                        <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
+<!-- Contact Section -->
 
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" name="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" name="email" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <textarea rows="5" class="form-control" name="message" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="section-heading color-overide">
+                <div class="section-head color-white">
+                    Welcome to the Family.
+                </div>
+                <div class="section-sub color-white">
+                    The Cross Border Housing Community is here for you every step of the way.
                 </div>
             </div>
         </div>
-    </section>
+        <div class="row">
+            <div class="col-lg-12">
+                <form name="sentMessage" id="contactForm"  action="contactus" method="post">
+                    <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
+
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name *" id="name" name="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="5" class="form-control" name="message" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <button type="submit" class="btn btn-xl">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- Scripts -->
 </body>
 @endsection

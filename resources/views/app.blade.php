@@ -25,14 +25,9 @@
     <link href="{{ asset('/css/carousel.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/screen.css') }}">
     <link rel="stylesheet" href="{{ asset('css/lightbox.css') }}">
-    <style type="text/css">
-    .floatLeft{
     
-    color: #f9a155 !important;
-    }
-
-
-
+    <style type="text/css">
+        .floatLeft{ color: #f9a155 !important; }
     </style>
     @yield('css-assets')
 </head>
@@ -62,7 +57,7 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                      <li>
+                    <li>
                         <a class="page-scroll" href="{{ url('/properties') }}">Properties</a>
                     </li>
                     <li>
