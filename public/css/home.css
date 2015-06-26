@@ -80,7 +80,7 @@ body {
     line-height: 1;
     padding-bottom: 0 !important;
     height: 100% !important;
-    padding-top: 115px !important;
+    padding-top: 70px !important;
     }
 }
 
@@ -139,14 +139,14 @@ body {
 #header {
 }
 #content {
-    padding-bottom:230px;  
+    padding-bottom:155px;   
 }
 #footer {
     width:100%;
-    height:230px;
+    /* height:230px; */
     position:absolute;
-    bottom:0;
-    left:0;
+    bottom:0px;
+    left:0px;
 }
 
 
@@ -226,7 +226,7 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
     border-color: #f6bf01;
-    color: #fff;
+    /* color: #fff; why define here and in non hover?*/
     background-color: #fec503;
 }
 
@@ -261,7 +261,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 20px 40px;
+    padding: 10px 20px;
     border-color: rgba(255,255,255,.3);
     border-radius: 3px;
     text-transform: uppercase;
@@ -278,7 +278,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
     border-color: rgba(255,255,255,.1);
-    color: #fff;
+    /* color: #fff; why define here and in non-hover?*/
     background-color: rgba(255,255,255,.1);
 }
 
@@ -471,10 +471,10 @@ button{
 }
 
 #big-logo{
-    height: 100px;
+    height: 70px;
 }
 .navbar-fixed-top .nav {
-    padding: 33px 0;
+    padding: 15px 0;
 }
 
 
@@ -577,7 +577,7 @@ header .splash-text .spash-sub {
 
 @media(min-width:768px) {
     header  {
-        padding-top: 300px;
+        padding-top: 200px;
         padding-bottom: 200px;
     }
 }
@@ -648,12 +648,17 @@ header .splash-text .spash-sub {
 
 /*section spacing*/
 section{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-cont {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom:0px;
 }
 
 #myCarousel{
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .page-foot{
 
@@ -731,17 +736,18 @@ vertical-align: center;
 }
 
 #contact{
+    padding: 30px;
     background-color: rgb(249,161,85);
 }
-#contactForm{
+#contactForm {
     padding-top: 30px;
     color: #fff !important;
 }
-.paypal img{
+.paypal img {
     display: block;
-    margin: 0 auto;
+    margin: 15px auto;
 }
-.paypal{
+.paypal {
     padding-top: 20px;
     margin: 0 auto;
 }
@@ -827,6 +833,14 @@ vertical-align: center;
     padding-right: 0;
 }
 
+.centered {
+    text-align:center;
+}
+
+.dark {
+    color: #777777;
+}
+
 @media (min-width: 601px) { 
 .override{
     margin-top: 20px;
@@ -879,21 +893,17 @@ vertical-align: center;
     .titlearea #title{
         font-size: 24px;
     }
-.infobar{
+    .infobar{
 
-    border-bottom-right-radius:5px;
-    border-bottom-left-radius:5px;
+        border-bottom-right-radius:5px;
+        border-bottom-left-radius:5px;
 
+    }
+
+    .desc-fix{
+        height: 2em !important;
+    }
 }
-
-.desc-fix{
-    height: 2em !important;
-}
-}
-
-
-
-
 
     .property-info{
         margin-top: 80px;

@@ -50,8 +50,10 @@
                 </div>
             </div>
         </div>
-
-        <a href="#services-button" class="page-scroll btn btn-xl" id="viewAll">View All Listings</a>
+        <div class="centered">
+            <a href="#services-button" class="page-scroll btn btn-xl dark" id="viewAll">View All Listings</a>            
+        </div>
+        
     <!-- image grid -->
 </section>
 
