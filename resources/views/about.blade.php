@@ -2,28 +2,31 @@
 
 @section('content')
 <style type="text/css">
-@media(min-width: 770px){
-.container{
-	padding-top: 160px !important;
-}
-}
-.container{
-	padding-top: 60px;
-}
+	@media(min-width: 770px){
+		.container{
+			padding-top: 80px !important;
+			padding-bottom:40px !important;
+		}
+	}
 
-.title{
-	font-size: 24pt;
-	text-align:center;
-}
+	.container{
+		padding-top: 60px;
+		padding-bottom: 30px;
+	}
 
-h1{
-	padding-bottom: 20px;
-}
+	.title{
+		font-size: 24pt;
+		text-align: center;
+	}
+
+	h1{
+		padding-bottom: 20px;
+	}
 </style>
 
 <div class="container">
 		<h1 class="title">About Cross Border Housing</h1>	
-	<section>
+	<section class="about">
 	<h1>Choose your home</h1>
 	<p> 
 		Our comprehensive online platform provides listings of local student properties of which a prospective international 
@@ -32,7 +35,7 @@ h1{
 		potential house and landlord in order to verify that they meet a standard level of quality set by CBH. 
 	</p>
 	</section>
-	<section>
+	<section class="about">
 		<h1>Customize your stay</h1> 
 		<p>
 			Once you find your new place you can add any extra amenities that you might need, including pots, pans, cutlery, glassware, 
@@ -40,14 +43,14 @@ h1{
 			choosing such services such as airport pickup or maid services.
 		</P>
 	</section>
-	<section>
+	<section class="about">
 		<h1>360 Support</h1> 
 		<p>
 			In addition to providing quality room listings and any additional amenities that one may need, we provide constant community 
 			support throughout your stay. Email us with any questions, comments, or concerns at any time, about anything. 
 		</p>
 	</section>
-	<section>
+	<section class="about">
 		<h1>CBH Community</h1> 
 		<p>
 			Not only do you get a quality room and are able to completely customize your stay with additional amenities, but once you book 

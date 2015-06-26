@@ -577,8 +577,8 @@ header .splash-text .spash-sub {
 
 @media(min-width:768px) {
     header  {
-        padding-top: 200px;
-        padding-bottom: 200px;
+        padding-top: 150px;
+        padding-bottom: 150px;
     }
 }
 
@@ -650,6 +650,11 @@ header .splash-text .spash-sub {
 section{
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+section.about {
+    padding-top:20px;
+    padding-bottom:20px;
 }
 
 .main-cont {
