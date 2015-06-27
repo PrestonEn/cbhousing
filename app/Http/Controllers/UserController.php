@@ -47,24 +47,21 @@ class UserController extends Controller {
 	public function show($id)
 	{
 		$user = Auth::User();
-		if (Auth::user() && $user->id == $id)
-        {
+		if (Auth::user() && $user->id == $id) { 
+			$requests = BookRequest::where('user_id',$id)->get();
+        	$data['requests'] = $requests;
 
-        
-        $requests = BookRequest::where('user_id',$id)->get();
-        $data['requests'] = $requests;
-        foreach ($requests as $request) {
+        	foreach ($requests as $request) {
         		$items =RequestCart::where('request_id',$request->id)->get();
         		$test = (array)$items;
-        		if(count($items)==0){
+        		if(count($items)==0) {
 
-        		}else{
+        		} else { 
         			$data[$request->id.'cart'] = $items;
     			}
-        }
-		return view('profile')->with('data',$data);
-
-        }else{
+        	}
+			return view('profile')->with('data',$data);
+        } else {
         	return redirect('/');
         }
 

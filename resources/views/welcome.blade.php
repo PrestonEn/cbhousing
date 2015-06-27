@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="centered">
-            <a href="#services-button" class="page-scroll btn btn-xl dark" id="viewAll">View All Listings</a>            
+            <a href="{{ url('/properties') }}" class="page-scroll btn btn-xl dark" id="viewAll">View All Listings</a>            
         </div>
         
     <!-- image grid -->
