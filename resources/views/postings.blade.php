@@ -30,7 +30,8 @@
                         @else
                             <div class="inner orangebox">
                         @endif
-                        <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <!-- "#portfolioModal6" -->
+                        <a href="{{ url('properties/'.$property->id) }}" class="portfolio-link" data-toggle="modal">
                             <img src="/{{$property->thumbnail}}" class="img-responsive port-img" alt="">
                         </a>
 

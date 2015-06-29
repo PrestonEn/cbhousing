@@ -850,24 +850,21 @@ vertical-align: center;
 }
 
 @media (min-width: 601px) { 
-.override{
-    margin-top: 20px;
-    width:100% !important;
-    margin-left: 15px;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
+    .override {
+        margin-top: 20px;
+        width:100% !important;
+        margin-left: 15px;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
     .property-info{
-        
         padding-left: 0 !important;
         padding-right: 0 !important;
         margin-bottom: 30px;
     }
     .postpic{
-
         z-index: 99999;
         width: 100%;
-
     }
     .propertypic{
         margin-left: 15px;
@@ -889,13 +886,13 @@ vertical-align: center;
         height: 100%;
         padding-top: 5px;
     }
-      .titlearea {
-    margin: 0 auto;
-    border-radius:10px;
-    padding-top: 5px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: rgb(249,161,85);
+    .titlearea {
+        margin: 0 auto;
+        border-radius:10px;
+        padding-top: 5px;
+        border-width: 3px;
+        border-style: solid;
+        border-color: rgb(249,161,85);
     }
 
     .titlearea #title{
@@ -916,6 +913,7 @@ vertical-align: center;
     .property-info{
         margin-top: 80px;
         margin-bottom:20px;
+        margin-left: 20px;
     }
 
     .postpic{
@@ -966,20 +964,20 @@ vertical-align: center;
     border-color: rgb(249,161,85); 
 }
 .oPanel{
-background-color: rgb(249,161,85) !important;
-border-color: rgb(249,161,85) !important;
-color: #fff !important;
-margin-top: 20px;
+    background-color: rgb(249,161,85) !important;
+    border-color: rgb(249,161,85) !important;
+    color: #fff !important;
+    margin-top: 20px;
 }
 .bPanel{
-background-color: #53b9d1;
-border-color: #53b9d1;
-color: #fff;
+    background-color: #53b9d1;
+    border-color: #53b9d1;
+    color: #fff;
 }
 
 .reqbutton{
-float:right;
-margin-right: 20px;
+    float:right;
+    margin-right: 20px;
 }
 .pricecell{
     color: #fff;
