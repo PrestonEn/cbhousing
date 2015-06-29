@@ -498,6 +498,10 @@ button{
 	#small-logo{
 		display: inline;
 	}
+
+    .navbar-brand {
+        padding-top: 5px;
+    }
 }
 
 /*Splash page styles*/
@@ -508,8 +512,11 @@ header{
     /*its always good to add more gradients!*/
     background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),
         linear-gradient(to bottom, rgba(249,161,85, 0.4) 0%, rgba(249,161,85, 0.4) 100%),
-            url(/img/home-images/WelcomeHome.jpg);
+        url(/img/home-images/WelcomeHome.jpg);
     background-position: center center;
+    height:100vh; /* Image fills viewport, scroll instantly reveals blue bar */
+    padding-top: 30vh;
+    padding-bottom: 30vh;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -548,7 +555,7 @@ header .spash-text .splash-head {
 }
 
 @media(max-width:768px) {
-        header  {
+    header  {
         padding-top: 30%;
         padding-bottom: 30%;
     }
@@ -559,10 +566,6 @@ header .spash-text .splash-head {
     .splash-sub{
         font-size:12pt;
         margin-bottom: 20px;
-    }
-
-    .navbar-brand{
-        padding-top: 5px;
     }
 }
 
@@ -575,13 +578,14 @@ header .splash-text .spash-sub {
     line-height: 50px;
 }
 
+/* To be deleted. padding rules placed in regular header selector above.
 @media(min-width:768px) {
     header  {
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 27.5vh;
+        padding-bottom: 27.5vh;
     }
-}
-
+} 
+*/
 
 /*button-bar styles*/
 #buttnbar{
@@ -611,7 +615,6 @@ header .splash-text .spash-sub {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 20px;
-
 }
 
 /*section text styles*/

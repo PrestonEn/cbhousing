@@ -5,6 +5,7 @@
 .top{
 	padding-top: 20px !important;
 }
+
 </style>
 
 @section('content')
@@ -14,6 +15,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Register</div>
 				<div class="panel-body">
+
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
 							<strong>Whoops!</strong> There were some problems with your input.<br><br>
@@ -57,14 +59,18 @@
 						</div>
 
 						<div class="form-group">							
-
 							<div class="col-md-6 col-md-offset-4">
-							<label>I Accept the <a style="margin-left:3px;"hre
-								f="{{asset('tos.pdf')}}">Terms Of Service</a></label>
-								<input type="radio" name="terms_of_service" value="1" style="display: block;">
+								<label class="checkbox">
+									<input type="checkbox" name="terms_of_service" value="1" style="display:block;float:left;">
+									<span style="margin-left:3px;">
+										I Accept the 
+										<a href="{{ asset('tos.pdf') }}">
+											Terms Of Service
+										</a>
+									</span>
+								</label>
 							</div>
 						</div>
-
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">

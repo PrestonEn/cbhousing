@@ -64,7 +64,7 @@
         <div class="section-sub">Transportation, mobile phone, food packages, bedding and more.</div>
     </div>
 
-        <!-- carosel implementation -->
+        <!-- carousel implementation -->
 <!-- Carousel
     ================================================== -->
 <div id="myCarousel" class="carousel slide">
@@ -78,7 +78,7 @@
      </div>
      <div class="item ad2">
         <div class="carousel-caption">
-            <h4>Make you house home, before you arrive</h4>
+            <h4>Make your house home, before you arrive</h4>
             <p>Choose a package of quality essential items to be delivered before you arrive. Come home to fresh sheets, utensils and all the cookware and dishes you need!</p>
          </div>
      </div>
