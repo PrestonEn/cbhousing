@@ -3,7 +3,7 @@
 @section('content')
     
 <div class="container-fluid">
-<div class="row" style="padding-top:160px;">
+<div class="row" style="padding-top:50px;">
 	<div class="col-md-4 col-md-offset-4 col-sm-8" role="main">
 
 		<div class="panel panel-primary">
@@ -87,8 +87,4 @@
     </div>
   </div>
 </div>
-	
-
-
-
 @endsection

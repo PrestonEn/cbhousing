@@ -32,7 +32,7 @@
                         @endif
                         <!-- "#portfolioModal6" -->
                         <a href="{{ url('properties/'.$property->id) }}" class="portfolio-link" data-toggle="modal">
-                            <img src="/{{$property->thumbnail}}" class="img-responsive port-img" alt="">
+                            <img src="/{{$property->thumbnail}}" class="img-responsive port-img">
                         </a>
 
                         <div class="portfolio-caption">

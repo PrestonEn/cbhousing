@@ -44,29 +44,29 @@
 	</div>
 </div>	
 <div class="col-md-8 col-sm-8">
-<div class="titlearea col-md-8 ">
-				<h3 id="title">{{$data['property']->title}}</h3>
-				<p>{{$data['property']->address}}</p>
+	<div class="titlearea col-md-8 ">
+		<h3 id="title">{{$data['property']->title}}</h3>
+		<p>{{$data['property']->address}}</p>
 
-			<div class="col-md-12 infobar">
-				<div class="col-md-4 metric ">
-					<div class="desc-fix"><h4>Distance To School</h4></div>
-					<img  class="cntr" src="http://crossborderhousing.com/img/street.png">
-					<h4>{{$data['property']->distance}}</h4>
-				</div>
-				<div class="col-md-4 metric">
-					<div class="desc-fix"><h4>Total Available Rooms</h4></div>
-					<img src="http://crossborderhousing.com/img/house.png">
-					<h4>{{$data['property']->rooms}}</h4>
+		<div class="col-md-12 infobar">
+			<div class="col-md-4 metric ">
+				<div class="desc-fix"><h4>Distance To School</h4></div>
+				<img  class="cntr" src="http://crossborderhousing.com/img/street.png">
+				<h4>{{$data['property']->distance}}km</h4>
+			</div>
+			<div class="col-md-4 metric">
+				<div class="desc-fix"><h4>Total Available Rooms</h4></div>
+				<img src="http://crossborderhousing.com/img/house.png">
+				<h4>{{$data['property']->rooms}}</h4>
 
-				</div>
-				<div class="col-md-4 metric">
-					<div class="desc-fix"><h4>Minutes Walk to Transit</h4></div>
-					<img src="http://crossborderhousing.com/img/bus.png">
-					<h4>{{$data['property']->time_to_bus}}</h4>
-				</div>
+			</div>
+			<div class="col-md-4 metric">
+				<div class="desc-fix"><h4>Minutes Walk to Transit</h4></div>
+				<img src="http://crossborderhousing.com/img/bus.png">
+				<h4>{{$data['property']->time_to_bus}}</h4>
 			</div>
 		</div>
+	</div>
 
 		@foreach($data['rooms'] as $room)
 		<div class='col-md-4  col-sm-6'>
@@ -87,7 +87,7 @@
 				@if($room->locked)
 					This Room Is Currently On Hold, But May Become Available Soon
 				@else	
-				 Availability:{{$room->available}}
+				 Availability: {{$room->available}}
 				 <h4 class="roomtitle">{{$room->title}}</h4>
 				@endif
 				</h5>
@@ -102,7 +102,7 @@
 	            			@endif
 				
 
-			</div>
+				</div>
 			</div>
 		</div>
 		@endforeach

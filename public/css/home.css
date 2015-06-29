@@ -764,7 +764,8 @@ vertical-align: center;
     margin: 0 !important;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
+    height:292px;
+    width:292px;
 }
 #ourpst{
     margin-top: 150px;
@@ -910,42 +911,51 @@ vertical-align: center;
     }
 }
 
-    .property-info{
-        margin-top: 80px;
-        margin-bottom:20px;
-        margin-left: 20px;
-    }
+.property-info{
+    margin-top: 80px;
+    margin-bottom:20px;
+    margin-left: 20px;
+}
 
-    .postpic{
-        width: 100% !important;
-        display: block;
-        border-width: 3px;
-        margin: 0 auto !important;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 0;
-        border-width: 3px;
-        border-bottom: none !important;
-        border-style: solid;
-        border-color: rgb(249,161,85); 
-    }
+.postpic{
+    width: 100% !important;
+    display: block;
+    border-width: 3px;
+    margin: 0 auto !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-width: 3px;
+    border-bottom: none !important;
+    border-style: solid;
+    border-color: rgb(249,161,85); 
+}
 
-    .propertypic{
-        width: 100% !important;
-        display: block;
-        border-radius: 10px;
-        border-width: 3px;
-        margin: 0 auto !important;
-        border-style: solid;
-        border-color: rgb(249,161,85);
-    }
-    .titlearea{
-        width: 70%;
-        margin: 0 auto;
-    }
+.propertypic{
+    width: 100% !important;
+    display: block;
+    border-radius: 10px;
+    border-width: 3px;
+    margin: 0 auto !important;
+    border-style: solid;
+    border-color: rgb(249,161,85);
+}
+.titlearea{
+    width: 70%;
+    margin: 0 auto;
+}
 
 .titlearea{
 }
+
+div.titlearea > h3 {
+    padding: 5px 5px 0 5px;
+}
+
+div.titlearea > p {
+    padding: 7.5px;
+}
+
 .paginator-links{
     text-align: center;
 }
@@ -962,6 +972,7 @@ vertical-align: center;
     border-width: 3px;
     border-style: solid;
     border-color: rgb(249,161,85); 
+    padding: 5px 0px 5px 5px;
 }
 .oPanel{
     background-color: rgb(249,161,85) !important;
