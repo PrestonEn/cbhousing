@@ -66,6 +66,9 @@
                     <li>
                         <a class="page-scroll" href="{{ url('/#contact') }}">Contact Us</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="{{ url('/loyalty') }}">Loyalty</a>
+                    </li>
 					@if (Auth::guest())
 						<li><a href="{{ url('/auth/login') }}">Login</a></li>
 						<li><a href="{{ url('/auth/register') }}">Register</a></li>
@@ -122,10 +125,10 @@
 
     <div class='row'>
     <div class="row cpright">
-        <h5 class="itybity">Copyright (c) Cross Border Housing Inc.</h5>
+        <h5 class="itybity">Copyright &copy; Cross Border Housing Inc.</h5>
     </div>
     </div>
-</section>
+    </section>
     </footer>
 
     <script src="//code.jquery.com/jquery.js"></script>

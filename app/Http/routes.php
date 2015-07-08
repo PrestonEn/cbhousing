@@ -10,15 +10,15 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
-// Entrust::routeNeedsRole('admin*', 'admin', Redirect::to('/'));
-
+Entrust::routeNeedsRole('admin*', 'admin', Redirect::to('/'));
 
 /* static pages */
 
 Route::get('/', 'PagesController@index');
 
 Route::get('about', 'PagesController@about');
+
+Route::get('loyalty', 'PagesController@loyalty');
 
 Route::get('temp', 'PagesController@contact');
 
@@ -35,9 +35,9 @@ Route::get('/admin', 'AdminController@index');
 
 Route::get('/admin/requests', 'AdminController@requests');
 
-//Route::post('/admin/requests/confirm/{id}');
+// Route::post('/admin/requests/confirm/{id}');
 
-//Route::post('/admin/requests/deny/{id}');
+// Route::post('/admin/requests/deny/{id}');
 
 Route::get('/admin/landlords', 'AdminController@landlords');
 
@@ -94,11 +94,12 @@ Route::post('postings/destroy/{id}', 'PostingController@destroy');
 /* amenities creations*/
 Route::post('amenities', 'AmenitiesController@store');
 
+Route::post('amenities/destroy/{id}', 'AmenitiesController@destroy');
+
+
 Route::get('/admin/updateAmenity/{id}', 'AmenitiesController@edit');
 
 Route::patch('amenities/edit/{id}', 'AmenitiesController@update');
-
-
 
 
 /*properties page*/
@@ -110,12 +111,18 @@ Route::get('/properties/{id}', 'PropertyController@show');
 /*user profile*/
 Route::get('user/{id}', 'UserController@show');
 
-
+/*Contact*/
 Route::post('contactus', 'senderController@contactus');
 
 /*present request form*/
-
 Route::post('request/book', 'RequestController@store');
+
+Route::post('request/approve/{id}', 'RequestController@approve');
+
+Route::post('request/deny/{id}', 'RequestController@deny');
+
+Route::post('request/destroy/{id}','RequestController@destroy');
+
 Route::get('request/{id}', 'RequestController@create');
 
 

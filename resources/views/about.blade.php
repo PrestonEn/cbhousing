@@ -25,7 +25,7 @@
 </style>
 
 <div class="container">
-		<h1 class="title">About Cross Border Housing</h1>	
+	<h1 class="title">About Cross Border Housing</h1>	
 	<section class="about">
 	<h1>Choose your home</h1>
 	<p> 

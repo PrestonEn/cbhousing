@@ -12,16 +12,20 @@ class PagesController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index()
-	{
+	public function index() {
 		return view('welcome');
 	}
 
-	public function contact(){
+	public function contact() {
 		return view('footer');
 	}
-	public function about(){
+
+	public function about() {
 		return view('about');
+	}
+
+	public function loyalty() {
+		return view('loyalty');
 	}
 
 }
