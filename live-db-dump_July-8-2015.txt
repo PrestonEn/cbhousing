@@ -1,0 +1,488 @@
+-- MySQL dump 10.13  Distrib 5.5.41, for Linux (x86_64)
+--
+-- Host: localhost    Database: crossborder
+-- ------------------------------------------------------
+-- Server version	5.5.41-cll-lve
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `addons`
+--
+
+DROP TABLE IF EXISTS `addons`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `addons` (
+  `id` varchar(13) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `price` int(11) NOT NULL,
+  `product_number` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `title` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `desc` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `thumbnail` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `addons`
+--
+
+LOCK TABLES `addons` WRITE;
+/*!40000 ALTER TABLE `addons` DISABLE KEYS */;
+INSERT INTO `addons` VALUES ('558a0cbb1e943','2015-06-24 08:49:47','2015-06-24 08:49:47',25,'1','1 Pot with Lid','- Holds up to 2 Quarts (1.9L) - Non- Stick','uploads/addons/558a0cbb1e943_/th_558a0cbb1e943CBH amenities Pot.jpg','uploads/addons/558a0cbb1e943_/558a0cbb1e943CBH amenities Pot.jpg'),('558a102b3e699','2015-06-24 09:04:27','2015-06-24 09:04:27',22,'2','1 Pan ','- Aluminum - Non stick coating - Black exterior - 20 cm diameter (8 inches)','uploads/addons/558a102b3e699_/th_558a102b3e699cbh amenities pan.jpg','uploads/addons/558a102b3e699_/558a102b3e699cbh amenities pan.jpg'),('558a11f76c632','2015-06-24 09:12:07','2015-06-24 09:12:07',6,'3','White Dinner Plate','- Resists cracking, chipping or breaking - Freezer, microwave and dishwasher safe - 25cm/10\" in diamater','uploads/addons/558a11f76c632_/th_558a11f76c632CBH amenities plate.jpg','uploads/addons/558a11f76c632_/558a11f76c632CBH amenities plate.jpg'),('558a13892ef79','2015-06-24 09:18:49','2015-06-24 09:18:49',6,'4','One Bowl','- Resists cracking, chipping or breaking - Freezer, microwave and dishwasher safe - 18oz. / 532ml','uploads/addons/558a13892ef79_/th_558a13892ef79CBH - Amenities- bowl.jpg','uploads/addons/558a13892ef79_/558a13892ef79CBH - Amenities- bowl.jpg'),('558a14d1bd79d','2015-06-24 09:24:17','2015-06-24 09:24:17',30,'5','16 Piece Dish Set','- Solid white porcelain - Microwave and dishwasher safe Includes 4 of each: -10.5\" dinner plate - 8\" side plate - 6.4\" soup bowl - 12.5 oz mug','uploads/addons/558a14d1bd79d_/th_558a14d1bd79dCBH - Amenities- dish set.jpg','uploads/addons/558a14d1bd79d_/558a14d1bd79dCBH - Amenities- dish set.jpg'),('558a15d26c8f4','2015-06-24 09:28:34','2015-06-24 09:28:34',10,'6','Forks (12 Pack)','- Ideal for breakfast, lunch and dinner!','uploads/addons/558a15d26c8f4_/th_558a15d26c8f4CBH - amenities forks.jpg','uploads/addons/558a15d26c8f4_/558a15d26c8f4CBH - amenities forks.jpg'),('558a1655b4822','2015-06-24 09:30:45','2015-06-24 09:30:45',10,'7','Teaspoons (12 Pack)','- Ideal for breakfast, lunch, dinner and of course tea!','uploads/addons/558a1655b4822_/th_558a1655b4822cbh - amenitites teaspoons.jpg','uploads/addons/558a1655b4822_/558a1655b4822cbh - amenitites teaspoons.jpg'),('558a16e9237cc','2015-06-24 09:33:13','2015-06-24 09:33:13',30,'8','20 Piece Cutlery Set','- 4 knives - 4 dinner forks - 4 salad forks - 4 spoons - 4 teaspoons - Stainless steel - Dishwasher safe','uploads/addons/558a16e9237cc_/th_558a16e9237cccbh - amenities 20 peice cutlery.jpg','uploads/addons/558a16e9237cc_/558a16e9237cccbh - amenities 20 peice cutlery.jpg'),('558a17955a83d','2015-06-24 09:36:05','2015-06-24 09:36:05',25,'9','Beverage Set (12 Glasses)','- 18oz / 573ml capacity - Heavy feel with wave circling glass','uploads/addons/558a17955a83d_/th_558a17955a83dcbh - amenities glass set.jpg','uploads/addons/558a17955a83d_/558a17955a83dcbh - amenities glass set.jpg'),('558a1884cfae7','2015-06-24 09:40:04','2015-06-24 09:40:04',10,'10','Canada Flag','-12\"x 24\"','uploads/addons/558a1884cfae7_/th_558a1884cfae7CBH - Amenities- flag.png','uploads/addons/558a1884cfae7_/558a1884cfae7CBH - Amenities- flag.png');
+/*!40000 ALTER TABLE `addons` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `apartment_postings`
+--
+
+DROP TABLE IF EXISTS `apartment_postings`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `apartment_postings` (
+  `posting_id` varchar(13) COLLATE utf8_unicode_ci NOT NULL,
+  `property_id` varchar(13) COLLATE utf8_unicode_ci NOT NULL,
+  `total` int(11) NOT NULL,
+  `filled` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`posting_id`),
+  KEY `apartment_postings_property_id_foreign` (`property_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `apartment_postings`
+--
+
+LOCK TABLES `apartment_postings` WRITE;
+/*!40000 ALTER TABLE `apartment_postings` DISABLE KEYS */;
+INSERT INTO `apartment_postings` VALUES ('556d1751ae00e','556d16a7399bf',1,0),('556d175fa3565','556d16a7399bf',1,0),('556d18a2ce5b7','556d16a7399bf',1,0),('556d1c0dc3eaf','556d194431c6d',2,0),('556d1daa05a6e','556d194431c6d',2,0),('556d25b93601c','556d2502bfd5a',30,0),('556d25f3b5019','556d2502bfd5a',30,0),('556d26e2eebe2','556d2502bfd5a',20,0),('556e7f0870d64','556e7edc92031',25,0),('556e7f297bdaa','556e7edc92031',25,0),('5570dd0ad6dd1','5570dcbfd6022',1,0),('5570fc6b1eeaf','5570fc186d62e',30,0),('55724c6dcb5dc','55724a7feed89',50,0),('55724ce5cc0b8','55724a7feed89',30,0),('557640d751c0f','55763463dc127',50,0),('557c4ccb8ebc4','55763463dc127',20,1),('55848da361cd8','55848c018822a',10,0),('55848eda5aab9','55848c018822a',1,0),('55848f0dbc277','55848c018822a',1,0),('55884b8987974','55848c018822a',1,0),('55884bfcab879','55848c018822a',1,0),('55884def190be','55848c018822a',20,0),('55885052d7572','55848c018822a',1,0),('5588508384b68','55848c018822a',20,0),('55885147a8fc3','55848c018822a',10,0),('558851e9bea59','55848c018822a',10,0),('558a07f1e7eb7','558a07baea1ce',20,0),('558a08cb32e8b','558a07baea1ce',20,0),('558a08e0d73d9','558a07baea1ce',20,0),('558a090a6b6b6','558a07baea1ce',20,0),('558a0937f4039','558a07baea1ce',20,0),('558b4616dc219','558a07baea1ce',20,0),('558b4657af2c3','558a07baea1ce',20,0),('558b46f52723f','558b46ddcfb1a',20,1),('558b49d3c16be','558b495c0b7ac',1,0),('558b4a1ce2aa4','558b495c0b7ac',10,0),('558cba23f3cf0','558cb6ca1ac41',2,0),('558cbc37596b9','558cb6ca1ac41',2,0),('558cbd1c9d2ac','558cb6ca1ac41',3,0),('558cbe387d607','558cb6ca1ac41',4,0),('559c560463904','559c5462e94c9',600,0),('559c566945c87','559c5462e94c9',27,0),('559c56ebc94cd','559c56c56ae65',27,0);
+/*!40000 ALTER TABLE `apartment_postings` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `carts`
+--
+
+DROP TABLE IF EXISTS `carts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `carts` (
+  `request_id` int(10) unsigned NOT NULL,
+  `item_name` text COLLATE utf8_unicode_ci NOT NULL,
+  `product_number` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `item_price` int(11) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  KEY `carts_request_id_foreign` (`request_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `carts`
+--
+
+LOCK TABLES `carts` WRITE;
+/*!40000 ALTER TABLE `carts` DISABLE KEYS */;
+INSERT INTO `carts` VALUES (4,'1 Pot with Lid','1',25,1),(4,'20 Piece Cutlery Set','8',30,1),(6,'1 Pan ','2',22,2);
+/*!40000 ALTER TABLE `carts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `landlords`
+--
+
+DROP TABLE IF EXISTS `landlords`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `landlords` (
+  `id` varchar(13) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `phone` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `landlords_email_unique` (`email`),
+  UNIQUE KEY `landlords_phone_unique` (`phone`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `landlords`
+--
+
+LOCK TABLES `landlords` WRITE;
+/*!40000 ALTER TABLE `landlords` DISABLE KEYS */;
+INSERT INTO `landlords` VALUES ('556d12bd15372','2015-06-02 09:19:41','2015-06-02 09:19:41','goncharow@computan.com','9059648404','Nick Goncharow'),('556d12d8d64c2','2015-06-02 09:20:08','2015-06-02 09:22:10','sl.dionne@yahoo.ca','9053245538','Mike Skrtich'),('556d12eab2690','2015-06-02 09:20:26','2015-06-02 09:20:26','kevinhancock35@gmail.com','4166245712','Kevin Hancock'),('556d13141c5e4','2015-06-02 09:21:08','2015-06-02 09:21:08','sirshanewebber@gmail.com','9059333512','Shane Webber'),('556d21cd81a65','2015-06-02 10:23:57','2015-06-02 10:23:57','hector.dedivitiis@icloud.com','9053299746','Hector De Divitiis'),('558395afdd148','2015-06-19 11:08:15','2015-06-19 11:08:15','jeffwozniakowski@hotmail.com','905-320-9493','Jeff Wozniakowski '),('5588baa06164a','2015-06-23 08:47:12','2015-06-23 08:47:12','davidhazell@live.com','9058705721','David Hazell');
+/*!40000 ALTER TABLE `landlords` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `migrations`
+--
+
+DROP TABLE IF EXISTS `migrations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `migrations` (
+  `migration` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `batch` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `migrations`
+--
+
+LOCK TABLES `migrations` WRITE;
+/*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
+INSERT INTO `migrations` VALUES ('2014_10_12_000000_create_users_table',1),('2014_10_12_100000_create_password_resets_table',1),('2015_01_09_174316_create_properties_table',1),('2015_02_09_174328_create_postings_table',1),('2015_03_09_174527_create_addons_table',1),('2015_05_09_210237_create_property_images',1),('2015_05_10_180305_create_posting_images',1),('2015_05_10_231234_landlords',1),('2015_05_13_004901_entrust_setup_tables',1),('2015_05_21_213909_apartment_postings',1),('2015_05_30_000153_requests',1),('2015_05_31_171046_request_cart',1);
+/*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `password_resets`
+--
+
+DROP TABLE IF EXISTS `password_resets`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `password_resets` (
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `token` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  KEY `password_resets_email_index` (`email`),
+  KEY `password_resets_token_index` (`token`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `password_resets`
+--
+
+LOCK TABLES `password_resets` WRITE;
+/*!40000 ALTER TABLE `password_resets` DISABLE KEYS */;
+/*!40000 ALTER TABLE `password_resets` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `permission_role`
+--
+
+DROP TABLE IF EXISTS `permission_role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `permission_role` (
+  `permission_id` int(10) unsigned NOT NULL,
+  `role_id` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`permission_id`,`role_id`),
+  KEY `permission_role_role_id_foreign` (`role_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `permission_role`
+--
+
+LOCK TABLES `permission_role` WRITE;
+/*!40000 ALTER TABLE `permission_role` DISABLE KEYS */;
+/*!40000 ALTER TABLE `permission_role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `permissions`
+--
+
+DROP TABLE IF EXISTS `permissions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `permissions` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `display_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `permissions_name_unique` (`name`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `permissions`
+--
+
+LOCK TABLES `permissions` WRITE;
+/*!40000 ALTER TABLE `permissions` DISABLE KEYS */;
+/*!40000 ALTER TABLE `permissions` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `posting_images`
+--
+
+DROP TABLE IF EXISTS `posting_images`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `posting_images` (
+  `id` varchar(13) COLLATE utf8_unicode_ci NOT NULL,
+  `location` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `file_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `posting_id` varchar(13) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `posting_images_posting_id_foreign` (`posting_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `posting_images`
+--
+
+LOCK TABLES `posting_images` WRITE;
+/*!40000 ALTER TABLE `posting_images` DISABLE KEYS */;
+INSERT INTO `posting_images` VALUES ('557639e6b2fec','uploads/557635f781b11/557639e6ac53a/','557639e6ac53a181DevineCres2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','557639e6ac53a'),('55763c7dc6f05','uploads/557636aeeb14b/55763c7dc5302/','55763c7dc530230FrontStS16.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','55763c7dc5302'),('55763c99f1027','uploads/557636aeeb14b/55763c99eeb90/','55763c99eeb9030FrontStS4.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','55763c99eeb90'),('55763d12f2426','uploads/557634e145e9d/55763d12f06ae/','55763d12f06ae28AlbertStE2.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','55763d12f06ae'),('55763d730554c','uploads/55763578a5f85/55763d730308d/','55763d730308d284GlenridgeAve2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55763d730308d'),('557640d754358','uploads/55763463dc127/557640d751c0f/','557640d751c0f54FrontStS6.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','557640d751c0f'),('55765b56b43bc','uploads/55765ae7e0d53/55765b56b278b/','55765b56b278b70WestStN4.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','55765b56b278b'),('557c4ccb95095','uploads/55763463dc127/557c4ccb8ebc4/','557c4ccb8ebc454FrontStS6.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','557c4ccb8ebc4'),('557f3649ceca9','uploads/557635f781b11/557f3649cc23d/','557f3649cc23d181DevineCres5.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','557f3649cc23d'),('557f6770e5755','uploads/557c4ccb8ebc4_/','557c4ccb8ebc454FrontStS10.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','557c4ccb8ebc4'),('557f67715122a','uploads/557c4ccb8ebc4_/','557c4ccb8ebc454FrontStS11.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','557c4ccb8ebc4'),('558385a72893a','uploads/55838290f3e06/558385a72466b/','558385a72466brsz_img_7250_2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558385a72466b'),('55838a8e61078','uploads/55838290f3e06/55838a8e5f669/','55838a8e5f669rsz_img_7246_2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55838a8e5f669'),('55838b28370a1','uploads/55838290f3e06/55838b283506f/','55838b283506frsz_1img_7243_2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55838b283506f'),('55838f6aaf8af','uploads/55838290f3e06/55838f6aaa295/','55838f6aaa295rsz_img_7248_2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55838f6aaa295'),('55848da366487','uploads/55848c018822a/55848da361cd8/','55848da361cd884JamesSt4.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55848da361cd8'),('55848f0dbe382','uploads/55848c018822a/55848f0dbc277/','55848f0dbc27784FrontSt6.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55848f0dbc277'),('5584958929faa','uploads/55848f0dbc277_/','55848f0dbc27784JamesSt9.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55848f0dbc277'),('558497e733f97','uploads/55848da361cd8_/','55848da361cd884JamesSt11.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55848da361cd8'),('55884bfcade81','uploads/55848c018822a/55884bfcab879/','55884bfcab87984JamesSt14.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55884bfcab879'),('55884bfd42f99','uploads/55848c018822a/55884bfcab879/','55884bfcab87984JamesSt15.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55884bfcab879'),('55884def1e021','uploads/55848c018822a/55884def190be/','55884def190be84FrontSt6.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55884def190be'),('55884def51d45','uploads/55848c018822a/55884def190be/','55884def190be84JamesSt16.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55884def190be'),('55885052d9aef','uploads/55848c018822a/55885052d7572/','55885052d757284JamesSt19.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55885052d7572'),('558850533784b','uploads/55848c018822a/55885052d7572/','55885052d757284JamesSt20.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55885052d7572'),('5588508386aff','uploads/55848c018822a/5588508384b68/','5588508384b6884JamesSt14.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588508384b68'),('55885083b9d1c','uploads/55848c018822a/5588508384b68/','5588508384b6884JamesSt16.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588508384b68'),('55885147aabc6','uploads/55848c018822a/55885147a8fc3/','55885147a8fc384JamesSt14.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55885147a8fc3'),('55885148003f0','uploads/55848c018822a/55885147a8fc3/','55885147a8fc384JamesSt16.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55885147a8fc3'),('558851e9c0e39','uploads/55848c018822a/558851e9bea59/','558851e9bea5984FrontSt6.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558851e9bea59'),('558851ea05a56','uploads/55848c018822a/558851e9bea59/','558851e9bea5984JamesSt15.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558851e9bea59'),('5588a47b1d663','uploads/5588a3d90be6f/5588a47b1b309/','5588a47b1b3091GlenbraeAve14.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588a47b1b309'),('5588a4bbb1b56','uploads/5588a3d90be6f/5588a4bbafb4c/','5588a4bbafb4c1GlenbraeAve14.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588a4bbafb4c'),('5588a8a862614','uploads/5588a8215ce4e/5588a8a860477/','5588a8a86047712HamptonRd33.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588a8a860477'),('5588a8a8acfbe','uploads/5588a8215ce4e/5588a8a860477/','5588a8a86047712HamptonRd35.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588a8a860477'),('5588a8a928fbf','uploads/5588a8215ce4e/5588a8a860477/','5588a8a86047712HamptonRd37.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588a8a860477'),('5588aa49d50ac','uploads/5588a8215ce4e/5588aa49cf227/','5588aa49cf22712HamptonRd33.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588aa49cf227'),('5588aa4a23e1b','uploads/5588a8215ce4e/5588aa49cf227/','5588aa49cf22712HamptonRd35.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588aa49cf227'),('5588aa4a8c6e3','uploads/5588a8215ce4e/5588aa49cf227/','5588aa49cf22712HamptonRd37.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588aa49cf227'),('5588ac4e04f47','uploads/5588a3d90be6f/5588ac4e032f8/','5588ac4e032f81GlenbraeAve14.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588ac4e032f8'),('5588ac69c4292','uploads/5588a3d90be6f/5588ac69c2949/','5588ac69c29491GlenbraeAve14.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588ac69c2949'),('5588d487bce0e','uploads/5588d42a9d440/5588d487ba94f/','5588d487ba94f44RemigioCt7.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588d487ba94f'),('5588d49edc2fe','uploads/5588d42a9d440/5588d49eda909/','5588d49eda90944RemigioCt9.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588d49eda909'),('5588d4cbe067e','uploads/5588d42a9d440/5588d4cbde7a2/','5588d4cbde7a244RemigioCt19.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588d4cbde7a2'),('5588d4feb2e95','uploads/5588d42a9d440/5588d4feb0e57/','5588d4feb0e5744RemigioCt23.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588d4feb0e57'),('558b2490a38c6','uploads/558b2475717f2/558b2490a1dab/','286GlenridgeAve9.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558b2490a1dab'),('558b24b436a34','uploads/558b2490a1dab_/','558b2490a1dab286GlenridgeAve11.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558b2490a1dab'),('558b4657b1ad6','uploads/558a07baea1ce/558b4657af2c3/','54FrontStS11.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558b4657af2c3'),('558b46f5290d7','uploads/558b46ddcfb1a/558b46f52723f/','54FrontStS1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558b46f52723f'),('558b49d3c45c0','uploads/558b495c0b7ac/558b49d3c16be/','84JamesSt19.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558b49d3c16be'),('558b4a1ce4abd','uploads/558b495c0b7ac/558b4a1ce2aa4/','84FrontSt6.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558b4a1ce2aa4'),('558cbc375bc24','uploads/558cb6ca1ac41/558cbc37596b9/','71WestStN10.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558cbc37596b9'),('558cbd1ca2493','uploads/558cb6ca1ac41/558cbd1c9d2ac/','71WestStN15.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558cbd1c9d2ac'),('558cbe387feda','uploads/558cb6ca1ac41/558cbe387d607/','70WestStN16.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558cbe387d607'),('55918a888be80','uploads/55918a58ba1a1/55918a888a207/','30FrontStS4.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','55918a888a207'),('55918a9f24635','uploads/55918a58ba1a1/55918a9f2218b/','30FrontStS16.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','55918a9f2218b'),('559c566948601','uploads/559c5462e94c9/559c566945c87/','54FrontStS11.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','559c566945c87'),('559c56ebcbac0','uploads/559c56c56ae65/559c56ebc94cd/','54FrontStS11.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','559c56ebc94cd');
+/*!40000 ALTER TABLE `posting_images` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `postings`
+--
+
+DROP TABLE IF EXISTS `postings`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `postings` (
+  `id` varchar(13) COLLATE utf8_unicode_ci NOT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `locked` tinyint(1) NOT NULL DEFAULT '0',
+  `tenant_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `price` int(11) NOT NULL,
+  `posting_type` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `property_id` varchar(13) COLLATE utf8_unicode_ci NOT NULL,
+  `available` date NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `postings_property_id_foreign` (`property_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `postings`
+--
+
+LOCK TABLES `postings` WRITE;
+/*!40000 ALTER TABLE `postings` DISABLE KEYS */;
+INSERT INTO `postings` VALUES ('5570fc6b1eeaf','teest',1,'','2015-06-05 08:33:31','2015-06-05 08:34:54',1400,'apartment','5570fc186d62e','2015-06-18'),('5571dfe778de7','1 bedroom, very spacious',0,'','2015-06-06 00:44:07','2015-06-06 00:44:07',450,'house','5571df5e0ee4e','2015-06-01'),('557219d51bd45','1 bedroom, spacious, furnished',0,'','2015-06-06 04:51:17','2015-06-06 04:51:17',450,'house','5572192317920','2015-06-01'),('55724c6dcb5dc','Single rooms, shared bathrooms',0,'','2015-06-06 08:27:09','2015-06-06 08:27:09',600,'apartment','55724a7feed89','2015-06-01'),('55724ce5cc0b8','Single rooms, shared bathrooms, above Moose and Goose',0,'','2015-06-06 08:29:09','2015-06-06 08:29:09',500,'apartment','55724a7feed89','2015-06-01'),('5572545590f98','1 bedroom with private bathroom ',1,'','2015-06-06 09:00:53','2015-06-07 08:59:11',585,'house','557250f8b92e4','2015-06-01'),('55725932dd072','2 Rooms - Fully furnished',0,'','2015-06-06 09:21:38','2015-06-06 09:21:38',585,'house','55725902deb86','2015-06-01'),('55760a71d1526','2 Rooms - Fully furnished',0,'','2015-06-09 04:34:41','2015-06-09 04:34:41',585,'house','55725902deb86','2015-06-01'),('55760a7ac8695','2 Rooms - Fully furnished',0,'','2015-06-09 04:34:50','2015-06-09 04:34:50',585,'house','55725902deb86','2015-06-01'),('55760ba1eeb81','1 bedroom, very spacious',0,'','2015-06-09 04:39:45','2015-06-09 04:39:45',450,'house','5571df5e0ee4e','2015-06-09'),('55763d730308d','Room #1',0,'','2015-06-09 08:12:19','2015-06-09 08:12:19',450,'house','55763578a5f85','2015-06-01'),('55763d12f06ae','Room #1',0,'','2015-06-09 08:10:42','2015-06-09 08:10:42',585,'house','557634e145e9d','2015-06-01'),('55918a9f2218b','Room #2',0,'','2015-06-30 01:12:47','2015-06-30 01:12:47',585,'house','55918a58ba1a1','2015-06-01'),('55918a888a207','Room #1',1,'','2015-06-30 01:12:24','2015-06-30 03:13:29',550,'house','55918a58ba1a1','2015-06-01'),('557639e6ac53a','Room #1',0,'','2015-06-09 07:57:10','2015-06-09 07:57:10',450,'house','557635f781b11','2015-06-01'),('557c4ccb8ebc4','Room #1',0,'','2015-06-13 22:31:23','2015-06-13 22:31:23',600,'apartment','55763463dc127','2015-06-01'),('55765b56b278b','Room #1',0,'','2015-06-09 10:19:50','2015-06-09 10:19:50',600,'house','55765ae7e0d53','2015-06-01'),('557f3649cc23d','Room #2',1,'','2015-06-16 03:32:09','2015-06-29 02:13:06',450,'house','557635f781b11','2015-06-01'),('558385a72466b','Master Bedroom 1',0,'','2015-06-19 09:59:51','2015-06-19 09:59:51',600,'house','55838290f3e06','2015-08-01'),('55838f6aaa295','Standard Bedroom 1 ',0,'','2015-06-19 10:41:30','2015-06-19 10:41:30',550,'house','55838290f3e06','2015-08-01'),('55885052d7572','Room #1',0,'','2015-06-23 01:13:38','2015-06-23 01:13:38',450,'apartment','55848c018822a','2015-06-01'),('55885147a8fc3','Room #2',0,'','2015-06-23 01:17:43','2015-06-23 01:17:43',600,'apartment','55848c018822a','2015-06-01'),('558851e9bea59','Room #3',0,'','2015-06-23 01:20:25','2015-06-23 01:20:25',500,'apartment','55848c018822a','2015-06-01'),('5588d487ba94f','Room #1',0,'','2015-06-23 10:37:43','2015-06-23 10:37:43',500,'house','5588d42a9d440','2015-06-01'),('5588d49eda909','Room #2',0,'','2015-06-23 10:38:06','2015-06-23 10:38:06',500,'house','5588d42a9d440','2015-06-01'),('5588a8a860477','Room #1 - 12 month lease',0,'','2015-06-23 07:30:32','2015-06-23 07:30:32',500,'house','5588a8215ce4e','2015-06-01'),('5588aa49cf227','Room #1 - 8 month lease',0,'','2015-06-23 07:37:29','2015-06-23 07:37:29',550,'house','5588a8215ce4e','2015-06-01'),('5588ac4e032f8','Room #1 - 12 month lease',0,'','2015-06-23 07:46:06','2015-06-23 07:46:06',500,'house','5588a3d90be6f','2015-06-01'),('5588ac69c2949','Room #1 - 8 month lease',0,'','2015-06-23 07:46:33','2015-06-23 07:46:33',550,'house','5588a3d90be6f','2015-06-01'),('5588d4cbde7a2','Room #3',0,'','2015-06-23 10:38:51','2015-06-23 10:38:51',500,'house','5588d42a9d440','2015-06-01'),('5588d4feb0e57','Room #4',0,'','2015-06-23 10:39:42','2015-06-23 10:39:42',500,'house','5588d42a9d440','2015-06-01'),('558b4657af2c3','Room #1',0,'','2015-06-25 07:07:51','2015-06-25 07:07:51',600,'apartment','558a07baea1ce','2015-06-01'),('558b2490a1dab','Room #1',0,'','2015-06-25 04:43:44','2015-06-25 04:43:44',475,'house','558b2475717f2','2015-06-01'),('558b46f52723f','Room #1',0,'','2015-06-25 07:10:29','2015-06-25 07:10:29',600,'apartment','558b46ddcfb1a','2015-06-01'),('558b49d3c16be','Room #1',0,'','2015-06-25 07:22:43','2015-06-25 07:22:43',450,'apartment','558b495c0b7ac','2015-06-01'),('558b4a1ce2aa4','Room #2',0,'','2015-06-25 07:23:56','2015-06-25 07:23:56',500,'apartment','558b495c0b7ac','2015-06-01'),('558cbc37596b9','Main Floor Rooms',0,'','2015-06-26 09:43:03','2015-06-26 09:43:03',500,'apartment','558cb6ca1ac41','2015-08-01'),('558cbd1c9d2ac','Basement Rooms',0,'','2015-06-26 09:46:52','2015-06-26 09:46:52',600,'apartment','558cb6ca1ac41','2015-08-01'),('558cbe387d607','Top Level Rooms',0,'','2015-06-26 09:51:36','2015-06-26 09:51:36',680,'apartment','558cb6ca1ac41','2015-08-01'),('559c56ebc94cd','Room #1 - 54Front',0,'','2015-07-08 05:47:07','2015-07-08 05:47:07',600,'apartment','559c56c56ae65','2015-07-01');
+/*!40000 ALTER TABLE `postings` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `properties`
+--
+
+DROP TABLE IF EXISTS `properties`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `properties` (
+  `id` varchar(13) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `title` varchar(60) COLLATE utf8_unicode_ci NOT NULL,
+  `landlord_email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` text COLLATE utf8_unicode_ci NOT NULL,
+  `property_type` text COLLATE utf8_unicode_ci NOT NULL,
+  `address` text COLLATE utf8_unicode_ci NOT NULL,
+  `amenities` text COLLATE utf8_unicode_ci NOT NULL,
+  `posted_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `thumbnail` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `rooms` int(11) NOT NULL,
+  `distance` double NOT NULL,
+  `time_to_bus` double NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `properties`
+--
+
+LOCK TABLES `properties` WRITE;
+/*!40000 ALTER TABLE `properties` DISABLE KEYS */;
+INSERT INTO `properties` VALUES ('559c56c56ae65','2015-07-08 05:46:29','2015-07-08 05:47:07','Secure Student Residence','hector.dedivitiis@icloud.com','This property is very secure and every entrance requires a key. Being located in the heart of the downtown core with the Moose & Goose and Donnelly\'s Irish Pub located in the same complex this facility has many conveniences right at your foot steps.','apartment','54 Front Street South, Thorold','Partially furnished | Private bathrooms | Unlimited internet | Shared kitchen | Secure entrances | Parking | Laundry','2015-07-08 05:46:29','uploads/559c56c56ae65_/th_54FrontStS1.jpg','uploads/559c56c56ae65_/54FrontStS1.jpg',27,5.1,1),('55918a58ba1a1','2015-06-30 01:11:36','2015-06-30 01:12:47','Newly renovated, fully furnished','sl.dionne@yahoo.ca','Located above On the Front Cafe - a trendy coffee house - this residence is a MUST for students looking for a unique living experience!','house','30 Front Street South, Thorold','Fully furnished (bed, desk, and mini fridge) | Unlimited internet | Cable | Utilities included | Laundry','2015-06-30 01:11:36','uploads/55918a58ba1a1_/th_30FrontStS1.jpg','uploads/55918a58ba1a1_/30FrontStS1.jpg',2,4.8,1),('557635f781b11','2015-06-09 07:40:23','2015-06-16 09:29:28','Well kept home, partially furnished','kevinhancock35@gmail.com','This is a very clean, well kept student house.The kitchen is shared and all appliances are provided (fridge, stove, microwave, etc). The living room is fully furnished and has a flat screen TV. Rent includes all utilities and internet.','house','181 Devine Crescent, Thorold','Utilities included | Unlimited internet | Partially furnished','2015-06-09 07:40:23','uploads/557635f781b11_/th_557635f781b11181DevineCres1.jpg','uploads/557635f781b11_/557635f781b11181DevineCres1.jpg',2,4.4,3),('557634e145e9d','2015-06-09 07:35:45','2015-06-16 09:31:00','Great apartment, newly renovated','sl.dionne@yahoo.ca','This beautiful loft style residence is home to five private bedroom suites, each featuring the Skrtich signature personal en suite bathrooms. With a beautiful shared living space that is fully furnished with couches and a TV, it is a quick transition to feel right at home at 28 Albert Street East.','house','28 Albert Street East, Thorold','Fully furnished | Private bathrooms | Utilities included | Unlimited internet | Laundry','2015-06-09 07:35:45','uploads/557634e145e9d_/th_557634e145e9d28AlbertSt.jpg','uploads/557634e145e9d_/557634e145e9d28AlbertSt.jpg',1,4.4,2),('55763578a5f85','2015-06-09 07:38:16','2015-06-25 03:07:52','Great house, close to Brock','goncharow@computan.com','3 minute drive away from Brock, but it is also close enough to walk. Bus stop directly in front of house. Buses every 15 minutes (except May - August). Parking, cable and internet is provided. Lawn care and snow removal are included.','house','284 Glenridge Avenue, St. Catharines ','Partially furnished | Utilities included | Unlimited internet ','2015-06-09 07:38:16','uploads/55763578a5f85_/th_55763578a5f85284GlenridgeAve1.jpg','uploads/55763578a5f85_/55763578a5f85284GlenridgeAve1.jpg',1,2,1),('558b495c0b7ac','2015-06-25 07:20:44','2015-06-25 07:23:56','Single Room, Downtown Apartments','hector.dedivitiis@icloud.com','Located in the downtown heart of St. Catharines, these apartments are located directly across from the Market Square right next to the Public Library and 1 block from the St. Catharines Bus Terminal, countless cafes and restaurants and only 3 blocks from Montebello Park. ','apartment','84 James Street South, St. Catharines','Partially furnished | Private bathrooms | Unlimited internet | Shared kitchen | Secure entrances | Parking | Laundry','2015-06-25 07:20:44','uploads/558b495c0b7ac_/th_84JamesSt2.jpg','uploads/558b495c0b7ac_/84JamesSt2.jpg',11,5.3,3),('558b2475717f2','2015-06-25 04:43:17','2015-06-26 09:57:02','Very close to Brock, Female Roomates','goncharow@computan.com','3 minute drive away from Brock, but it is also close enough to walk. Bus stop directly in front of house. Buses every 15 minutes (except May - August). Parking, cable and internet is provided. Lawn care and snow removal are included.','house','286 Glenridge Avenue, St. Catharines','Rent includes all utilities and internet | New, clean kitchen | Spacious rooms | Large backyard | Minutes away from Brock | Bus routes in front of the house ','2015-06-25 04:43:17','uploads/558b2475717f2_/th_286GlenridgeAve1.jpg','uploads/558b2475717f2_/286GlenridgeAve1.jpg',1,2,1),('5588d42a9d440','2015-06-23 10:36:10','2015-06-23 10:39:42','Spacious rooms, great student rental','davidhazell@live.com','This house is located in a pleasant blend of family and student communities. It is located in a court close to bus stops, restaurants, and convenience stores. It is newly renovated and close to Brock University.','house','44 Remigio Court, St. Catharines','All utilities included | Laundry on site | Parking | Furnished living room ','2015-06-23 10:36:10','uploads/5588d42a9d440_/th_5588d42a9d44044RemigioCt1.jpg','uploads/5588d42a9d440_/5588d42a9d44044RemigioCt1.jpg',4,4.7,1);
+/*!40000 ALTER TABLE `properties` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `property_images`
+--
+
+DROP TABLE IF EXISTS `property_images`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `property_images` (
+  `id` varchar(13) COLLATE utf8_unicode_ci NOT NULL,
+  `location` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `file_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `property_id` varchar(13) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `property_images_property_id_foreign` (`property_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `property_images`
+--
+
+LOCK TABLES `property_images` WRITE;
+/*!40000 ALTER TABLE `property_images` DISABLE KEYS */;
+INSERT INTO `property_images` VALUES ('55760a1685503','uploads/55725902deb86_/','55725902deb8628AlbertSt.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55725902deb86'),('55760b15c0fb7','uploads/5571df5e0ee4e_/','5571df5e0ee4e284GlenridgeAve1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5571df5e0ee4e'),('55760bec03b1e','uploads/55724a7feed89_/','55724a7feed8954FrontStS1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55724a7feed89'),('55760c0cc6e22','uploads/557250f8b92e4_/','557250f8b92e430FrontStS1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','557250f8b92e4'),('55760c4a5a738','uploads/5572192317920_/','5572192317920181DevineCres1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5572192317920'),('557615f1dde01','uploads/557615f1dd180_/','557615f1dd180555d275d974d61431594258554.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','557615f1dd180'),('55763463dd077','uploads/55763463dc127_/','55763463dc12754FrontStS1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55763463dc127'),('557634e1466e4','uploads/557634e145e9d_/','557634e145e9d28AlbertSt.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','557634e145e9d'),('55763578a686b','uploads/55763578a5f85_/','55763578a5f85284GlenridgeAve1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55763578a5f85'),('557635f78274c','uploads/557635f781b11_/','557635f781b11181DevineCres1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','557635f781b11'),('557636aeeb99b','uploads/557636aeeb14b_/','557636aeeb14b30FrontStS1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','557636aeeb14b'),('55765ae7e28c7','uploads/55765ae7e0d53_/','55765ae7e0d5370WestStN1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55765ae7e0d53'),('557c4cf0505b6','uploads/55763463dc127_/','55763463dc12754 Front St S 1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55763463dc127'),('557c4cf0681c2','uploads/55763463dc127_/','55763463dc12754 Front St S 3.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55763463dc127'),('557c4cf07ff68','uploads/55763463dc127_/','55763463dc12754 Front St S 4.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55763463dc127'),('557f3612b14b3','uploads/557635f781b11_/','557635f781b11181DevineCres3.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','557635f781b11'),('557f3613cc40d','uploads/557635f781b11_/','557635f781b11181DevineCres4.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','557635f781b11'),('557f68f1f3be5','uploads/557636aeeb14b_/','557636aeeb14b30 Front St S 6.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','557636aeeb14b'),('557f68f20f6be','uploads/557636aeeb14b_/','557636aeeb14b30 Front St S 12.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','557636aeeb14b'),('557f68f218666','uploads/557636aeeb14b_/','557636aeeb14b30 Front St S 13.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','557636aeeb14b'),('557f68f221284','uploads/557636aeeb14b_/','557636aeeb14b30 Front St S 17.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','557636aeeb14b'),('557f68f229ef9','uploads/557636aeeb14b_/','557636aeeb14b30 Front St S 20.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','557636aeeb14b'),('557f68f23303c','uploads/557636aeeb14b_/','557636aeeb14b30 Front St S 21.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','557636aeeb14b'),('557f68f23c184','uploads/557636aeeb14b_/','557636aeeb14b30 Front St S 22.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','557636aeeb14b'),('557f68f245118','uploads/557636aeeb14b_/','557636aeeb14b30 Front St S 23.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','557636aeeb14b'),('557f6a2adb68c','uploads/55765ae7e0d53_/','55765ae7e0d5370 West St N 2.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','55765ae7e0d53'),('557f6a2aeb2ee','uploads/55765ae7e0d53_/','55765ae7e0d5370 West St N 3.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','55765ae7e0d53'),('557f6a2af29da','uploads/55765ae7e0d53_/','55765ae7e0d5370 West St N 9.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','55765ae7e0d53'),('557f6a2b08225','uploads/55765ae7e0d53_/','55765ae7e0d5370 West St N 10.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','55765ae7e0d53'),('557f6a2b11361','uploads/55765ae7e0d53_/','55765ae7e0d5370 West St N 13.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','55765ae7e0d53'),('557f7399e71ad','uploads/557634e145e9d_/','557634e145e9d28 Albert St. E 5.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','557634e145e9d'),('557f739a06531','uploads/557634e145e9d_/','557634e145e9d28 Albert St. E 8.jpeg','0000-00-00 00:00:00','0000-00-00 00:00:00','557634e145e9d'),('557f7b59a848d','uploads/55763578a5f85_/','55763578a5f85284GlenridgeAve8.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55763578a5f85'),('557f7b5a92996','uploads/55763578a5f85_/','55763578a5f85284GlenridgeAve9.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55763578a5f85'),('557f7b5ac3885','uploads/55763578a5f85_/','55763578a5f85284GlenridgeAve10.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55763578a5f85'),('557f7b5b09fe6','uploads/55763578a5f85_/','55763578a5f85284GlenridgeAve11.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55763578a5f85'),('557f7b5b33c7c','uploads/55763578a5f85_/','55763578a5f85284GlenridgeAve12.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55763578a5f85'),('558382911a44c','uploads/55838290f3e06_/','55838290f3e06rsz_img_7237_2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55838290f3e06'),('5583862c7d337','uploads/55838290f3e06_/','55838290f3e06rsz_img_7254_2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55838290f3e06'),('558386c73a503','uploads/55838290f3e06_/','55838290f3e06rsz_fullsizerender_10.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55838290f3e06'),('558387299b30c','uploads/55838290f3e06_/','55838290f3e06rsz_1fullsizerender_12.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55838290f3e06'),('5583878fe3123','uploads/55838290f3e06_/','55838290f3e06rsz_fullsizerender_11.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55838290f3e06'),('5583879b57b31','uploads/55838290f3e06_/','55838290f3e06rsz_fullsizerender_11.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55838290f3e06'),('5583881943786','uploads/55838290f3e06_/','55838290f3e06rsz_img_7253_2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55838290f3e06'),('558389541ad10','uploads/55838290f3e06_/','55838290f3e06rsz_img_7256_2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55838290f3e06'),('558389bc39468','uploads/55838290f3e06_/','55838290f3e06rsz_1img_7241_2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55838290f3e06'),('55838ff7567b1','uploads/55838290f3e06_/','55838290f3e06rsz_fullsizerender_7.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55838290f3e06'),('558390c5ec08a','uploads/55838290f3e06_/','55838290f3e06rsz_img_7247_2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55838290f3e06'),('558391476bd60','uploads/55838290f3e06_/','55838290f3e06rsz_img_7255_2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55838290f3e06'),('5583928e196cf','uploads/55763463dc127_/','55763463dc127rsz_154frontsts9.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55763463dc127'),('55848c018abea','uploads/55848c018822a_/','55848c018822a84JamesSt2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55848c018822a'),('55848f43acd0b','uploads/55848c018822a_/','55848c018822a84JamesSt1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55848c018822a'),('5588a3d912ca1','uploads/5588a3d90be6f_/','5588a3d90be6f1GlenbraeAve2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588a3d90be6f'),('5588a6a601f06','uploads/5588a3d90be6f_/','5588a3d90be6f1GlenbraeAve4.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588a3d90be6f'),('5588a6a6c49da','uploads/5588a3d90be6f_/','5588a3d90be6f1GlenbraeAve6.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588a3d90be6f'),('5588a6a72d3d7','uploads/5588a3d90be6f_/','5588a3d90be6f1GlenbraeAve8.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588a3d90be6f'),('5588a6a76e4ae','uploads/5588a3d90be6f_/','5588a3d90be6f1GlenbraeAve10.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588a3d90be6f'),('5588a6a7ab69d','uploads/5588a3d90be6f_/','5588a3d90be6f1GlenbraeAve12.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588a3d90be6f'),('5588a8215e6f7','uploads/5588a8215ce4e_/','5588a8215ce4e12HamptonRd1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588a8215ce4e'),('5588d42a9f3a4','uploads/5588d42a9d440_/','5588d42a9d44044RemigioCt1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588d42a9d440'),('5588d5d20e5ea','uploads/5588d42a9d440_/','5588d42a9d44044RemigioCt3.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588d42a9d440'),('5588d5d2bc79b','uploads/5588d42a9d440_/','5588d42a9d44044RemigioCt5.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588d42a9d440'),('5588d5d31eee4','uploads/5588d42a9d440_/','5588d42a9d44044RemigioCt11.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588d42a9d440'),('5588d5d354a35','uploads/5588d42a9d440_/','5588d42a9d44044RemigioCt13.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588d42a9d440'),('5588d5d38a4de','uploads/5588d42a9d440_/','5588d42a9d44044RemigioCt15.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588d42a9d440'),('5588d5d3c0a5d','uploads/5588d42a9d440_/','5588d42a9d44044RemigioCt17.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588d42a9d440'),('5588d5d4239e7','uploads/5588d42a9d440_/','5588d42a9d44044RemigioCt21.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588d42a9d440'),('5588d5d45f641','uploads/5588d42a9d440_/','5588d42a9d44044RemigioCt25.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','5588d42a9d440'),('558a07baeeb6e','uploads/558a07baea1ce_/','54FrontStS1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558a07baea1ce'),('558b247576dfb','uploads/558b2475717f2_/','286GlenridgeAve1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558b2475717f2'),('558b46ddd07ec','uploads/558b46ddcfb1a_/','54FrontStS1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558b46ddcfb1a'),('558b47b801ddc','uploads/558b46ddcfb1a_/','558b46ddcfb1a54FrontStS5.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558b46ddcfb1a'),('558b47b814225','uploads/558b46ddcfb1a_/','558b46ddcfb1a54FrontStS7.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558b46ddcfb1a'),('558b47b826146','uploads/558b46ddcfb1a_/','558b46ddcfb1a54FrontStS8.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558b46ddcfb1a'),('558b47b84e9b8','uploads/558b46ddcfb1a_/','558b46ddcfb1a54FrontStS9.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558b46ddcfb1a'),('558b495c0dd43','uploads/558b495c0b7ac_/','84JamesSt2.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558b495c0b7ac'),('558b4b42600f1','uploads/558b495c0b7ac_/','558b495c0b7ac84JamesSt9.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558b495c0b7ac'),('558cb6ca1fc4c','uploads/558cb6ca1ac41_/','71WestStN.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558cb6ca1ac41'),('558cc4cb15538','uploads/558cb6ca1ac41_/','558cb6ca1ac4171WestStN1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558cb6ca1ac41'),('558cc4cb9874b','uploads/558cb6ca1ac41_/','558cb6ca1ac4171WestStN3.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558cb6ca1ac41'),('558cc4cbc73ed','uploads/558cb6ca1ac41_/','558cb6ca1ac4171WestStN5.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558cb6ca1ac41'),('558cc4cc2b2cc','uploads/558cb6ca1ac41_/','558cb6ca1ac4171WestStN6.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558cb6ca1ac41'),('558cc4cc5789b','uploads/558cb6ca1ac41_/','558cb6ca1ac4171WestStN7.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558cb6ca1ac41'),('558cc4cc8bb84','uploads/558cb6ca1ac41_/','558cb6ca1ac4171WestStN8.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558cb6ca1ac41'),('558cc4ccc0ad7','uploads/558cb6ca1ac41_/','558cb6ca1ac4171WestStN9.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','558cb6ca1ac41'),('55918a58c0c00','uploads/55918a58ba1a1_/','30FrontStS1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','55918a58ba1a1'),('559c54630c32a','uploads/559c5462e94c9_/','54FrontStS1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','559c5462e94c9'),('559c56c56b9df','uploads/559c56c56ae65_/','54FrontStS1.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','559c56c56ae65'),('559c576ca1a74','uploads/559c56c56ae65_/','559c56c56ae6554FrontStS7.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','559c56c56ae65'),('559c576ccbb65','uploads/559c56c56ae65_/','559c56c56ae6554FrontStS8.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','559c56c56ae65'),('559c576cddfd5','uploads/559c56c56ae65_/','559c56c56ae6554FrontStS9.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','559c56c56ae65'),('559c576d3bb50','uploads/559c56c56ae65_/','559c56c56ae6554FrontStS10.jpg','0000-00-00 00:00:00','0000-00-00 00:00:00','559c56c56ae65');
+/*!40000 ALTER TABLE `property_images` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `requests`
+--
+
+DROP TABLE IF EXISTS `requests`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `requests` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `move_in` date NOT NULL,
+  `move_out` date NOT NULL,
+  `user_email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `property_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `posting_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `status` int(11) NOT NULL,
+  `rent` int(11) NOT NULL,
+  `cart_json` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `requests_user_id_foreign` (`user_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `requests`
+--
+
+LOCK TABLES `requests` WRITE;
+/*!40000 ALTER TABLE `requests` DISABLE KEYS */;
+INSERT INTO `requests` VALUES (1,1,'0000-00-00','0000-00-00','info@cbhousing.com','5570fc186d62e','5570fc6b1eeaf','2015-06-05 08:34:54','2015-06-05 08:34:54',0,1400,''),(2,6,'0000-00-00','0000-00-00','alexander.mohr93@gmail.com','557250f8b92e4','5572545590f98','2015-06-07 08:59:11','2015-06-07 08:59:11',0,585,''),(3,9,'0000-00-00','0000-00-00','cody@cbhousing.ca','55763463dc127','557c4ccb8ebc4','2015-06-24 08:22:16','2015-06-24 08:22:16',0,600,''),(4,1,'2015-07-01','2015-12-31','info@cbhousing.com','558b46ddcfb1a','558b46f52723f','2015-06-27 02:58:13','2015-06-27 02:58:13',0,600,''),(5,10,'2015-06-26','2015-08-26','pujjitpm@gmail.com','557635f781b11','557f3649cc23d','2015-06-29 02:13:06','2015-06-29 02:13:06',0,450,''),(6,8,'2015-09-01','2016-04-30','j_earle@hotmail.com','55918a58ba1a1','55918a888a207','2015-06-30 03:13:29','2015-06-30 03:13:29',0,550,'');
+/*!40000 ALTER TABLE `requests` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `role_user`
+--
+
+DROP TABLE IF EXISTS `role_user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `role_user` (
+  `user_id` int(10) unsigned NOT NULL,
+  `role_id` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`user_id`,`role_id`),
+  KEY `role_user_role_id_foreign` (`role_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `role_user`
+--
+
+LOCK TABLES `role_user` WRITE;
+/*!40000 ALTER TABLE `role_user` DISABLE KEYS */;
+INSERT INTO `role_user` VALUES (1,1);
+/*!40000 ALTER TABLE `role_user` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `roles`
+--
+
+DROP TABLE IF EXISTS `roles`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `roles` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `display_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `roles_name_unique` (`name`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `roles`
+--
+
+LOCK TABLES `roles` WRITE;
+/*!40000 ALTER TABLE `roles` DISABLE KEYS */;
+INSERT INTO `roles` VALUES (1,'admin',NULL,NULL,'2015-06-01 18:31:22','2015-06-01 18:31:22');
+/*!40000 ALTER TABLE `roles` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(60) COLLATE utf8_unicode_ci NOT NULL,
+  `remember_token` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'ADMIN','info@cbhousing.com','$2y$10$U7GPmFBlPrS/KdEG71svQe0hqJVqHelWXvoCDdCy/hWEpqSU9/zJK','x1VobGSuD5Sl7CJaKCmv4U3Tj8cjhravbuUBPmieNgCSagDHSHZYwOX81jaQ','2015-06-01 18:26:50','2015-06-27 03:03:08'),(2,'Alex','alex@cbhousing.ca','$2y$10$eQjiU0YIkf4qbHHrC5YQuO2ho57eHqdQLvfJOgkLkdHulkxHwtqOe',NULL,'2015-06-02 20:49:23','2015-06-02 20:49:23'),(3,'TEST','TEST@GMAIL.COM','$2y$10$/fZEZ.N75QjjvrYAAJwOTO.1BpiBF9rGXFUlA32XEbfgUMpnBg4y2','WTl0m3pyCA7wmpwvKPLDZkDh7Zm72MAZkTcuBto9gbyNsKB306iTOxs1lKcD','2015-06-05 07:34:36','2015-06-05 07:34:57'),(4,'Cody Murdoch','cm11_1@hotmail.com','$2y$10$cg0R7BciPwe12lPT2TazreB.4Zbc.hG3exxSE4IL5byb3u0PEe1MK','pi89RQxpWipUplXD7imEQZi4BYeBWbaeGRwTbk2tSdHMr4MJms6vqSRp5eIl','2015-06-05 08:41:06','2015-06-23 07:06:49'),(5,'Chris','jl-0202@hotmail.com','$2y$10$pfqKWdjZkFvc9RiRCWFiLuKD6xIAPomOVn2quHK9/IYUqEpkomVHm',NULL,'2015-06-06 02:26:54','2015-06-06 02:26:54'),(6,'Alex Mohr','alexander.mohr93@gmail.com','$2y$10$GSRlOmJd.8.BbvZVIKRyGuKLBtNS6oGkJL9pyI328O/uVvZM5yIhe','rXRWviywQTbFDKrZOeB3gSH8yhCosnfM8Mvmvsw7SsCBCD8nAbz9XzqNTa8l','2015-06-07 08:51:27','2015-06-16 08:07:08'),(7,'Devon','devoncoutts@gmail.com','$2y$10$oUree.FNnSSUm5W7bPs55O5W/tgc00Xud1vtkB5I984Zri9PNFvR2',NULL,'2015-06-15 22:11:20','2015-06-15 22:11:20'),(8,'James Earle','j_earle@hotmail.com','$2y$10$eRseFqhYSwoeAtpHxGJ4uufJJfbR7QnoA91Snslu8goGuEBs43p3O','xB9JBQecPO5NL3NsA37rfBPbyv6L2X1h65i10Y847tJVVeEnKt0l7ArVmp2z','2015-06-23 06:25:56','2015-06-25 08:54:01'),(9,'Cody Murdoch','cody@cbhousing.ca','$2y$10$Zwd/zjfdYF/k58zN7meADu0oUSJGLlvHhWwt2dBmKgjsfb6AkOfAa',NULL,'2015-06-24 08:21:37','2015-06-24 08:21:37'),(10,'Pujit Mathuria','pujjitpm@gmail.com','$2y$10$VQas2rMab.Sc6b.PntUAje3uQf8Su98LZM.AkR7d/O9VK5L9WV7DG',NULL,'2015-06-29 02:03:40','2015-06-29 02:03:40'),(11,'Alex Mohr','alex@cbhousing.com','$2y$10$fhq7Qe7NCMIEfg7qAVKBzur1LySVSD3m6gsk8eaKQvsBPDf/GxaxK',NULL,'2015-07-03 03:12:08','2015-07-03 03:12:08'),(12,'Andrew McCartan','andrew.mccartan@outlook.com','$2y$10$MNNqmyW.YhXisCOWzqgBrunFSFqi1rC.SoCgJTYCSegKVUPHUHKp.',NULL,'2015-07-06 03:58:48','2015-07-06 03:58:48');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2015-07-08  6:55:24
