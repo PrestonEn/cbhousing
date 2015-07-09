@@ -14,8 +14,7 @@
 		padding-bottom: 30px;
 	}
 
-	.title {
-		margin-top: 60px;
+	.title{
 		font-size: 24pt;
 		text-align: center;
 	}
@@ -31,6 +30,10 @@
 		font-weight: bold;
 	}
 
+	h1 {
+		padding-bottom: 20px;
+	}
+
 	h2 {
 		margin-top: 20px;
 		margin-bottom: 40px;
@@ -40,7 +43,7 @@
 	}
 </style>
 
-<di class="container">
+<div class="container">
 	<h1 class="title">
 		CBH Loyalty Program
 	</h1>

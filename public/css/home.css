@@ -7,15 +7,16 @@
         float: none;
     }
     .navbar-toggle {
-        display: block;
+        display: block !important;
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
+
+    /* .navbar-collapse.collapse {
+        display: none !important;
+    } Having the above rule active overrides the similar rule in app.css, ruins mobile menu */
     .navbar-nav {
         float: none!important;
         margin: 7.5px -15px;
@@ -477,6 +478,9 @@ button{
     padding: 15px 0;
 }
 
+.nav, .navbar-nav, .navbar-right {
+    z-index: 100;
+}
 
 @media (min-width: 900px) { 
     .navbar-brand {
@@ -772,7 +776,8 @@ vertical-align: center;
 }
 
 .property-item{
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    min-width: 292px;
 }
 
 .inner{
@@ -783,12 +788,13 @@ vertical-align: center;
     border-width: 4px;
 }
 
-.bluebox{
+.bluebox {
     background-color: #53b9d1;
     border-color: #53b9d1;
 }
-.orangebox{
-    background-color: rgb(249,161,85);
+.orangebox {
+    background-color: #f9a155 !important;
+    /* background-color: rgb(249,161,85); */
     border-color: rgb(249,161,85);
 }
 
@@ -835,6 +841,14 @@ vertical-align: center;
 .infobar img{
     padding-top: 5px;
     height: 40px;
+}
+
+.text-sub {
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0 auto;
+    margin-top: 2.5px;
+    margin-bottom: 5px;
 }
 
 .titlearea{
@@ -984,26 +998,16 @@ div.titlearea > p {
     background-color: #53b9d1;
     border-color: #53b9d1;
     color: #fff;
+    text-align: center;
 }
 
 .reqbutton{
     float:right;
     margin-right: 20px;
 }
-.pricecell{
-    color: #fff;
-    border-radius: 10px;
-    font-size: 24px !important; 
-    padding: 5px 10px 5px 10px !important;
-    display: inline-block;
-    background-color:#53b9d1 !important; 
-    position: relative;
-    top:60px;
-    left: 30px;
-    width: auto !important;
-}
 
-.pricecell{
+.pricecell {
+    text-align: center;
     color: #fff;
     border-radius: 10px;
     font-size: 14px !important; 
@@ -1011,7 +1015,110 @@ div.titlearea > p {
     display: inline-block;
     background-color:#53b9d1 !important; 
     position: relative;
-    top:60px;
-    left: 60px;
-    width: auto !important;
+    top:26px;
+    width: 100% !important;
+}
+
+.roomcell {
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px !important; 
+    padding: 5px 10px 5px 10px !important;
+    display: inline-block;
+    background-color:#53b9d1 !important; 
+    position: relative;
+    top:26px;
+    left:30px;
+    width: 83.5% !important;
+    min-width: 292px;
+}
+
+@media (max-width: 1200px) {
+    .pricecell {
+
+    }
+
+    .roomcell {
+        left: 0px;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 1097px) {
+    h3, h4, h5 {
+        font-size: 10pt;
+    }
+
+    a > h4 {
+        font-size: 12pt;
+        margin-right: 7px;
+    }
+}
+
+@media (max-width: 992px) {
+    .pricecell {
+
+    }
+
+    .roomcell {
+        left: 23.5px;
+        width: 86.5% !important;
+    }
+
+    .titlearea {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .pricecell {
+
+    }
+
+    .roomcell {
+        text-align: center;
+        left: 0;
+        margin-right: 3px;
+        width: 298px !important;
+    }
+
+    .property-item {
+        text-align: center;
+        min-width: 298px !important;
+    }
+
+    .propertypic {
+        width: 70% !important;
+    }
+
+    .oPanel {
+        width: 72.5% !important;
+        margin-left: 11.5%;
+    }
+}
+
+@media (max-width: 601px) {
+    .infobar {
+        background-color: #f9a155;
+    }
+}
+
+@media (max-width: 326px) {
+    .roomcell {
+        width: 291px !important;
+    }
+}
+
+.blue {
+    background-color:#53b9d1 !important; 
+}
+
+.orange {
+    background-color: #f9a155 !important;
+}
+
+.warning {
+    margin: 0 auto;
+    padding: 0;
 }

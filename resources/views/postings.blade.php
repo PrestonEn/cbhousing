@@ -23,11 +23,11 @@
                     $class = "odd";
                 } ?>
                     <div class="col-md-4 col-sm-6 property-item">
-                        <h5 class="pricecell">{{$data[$property->id]}} room(s)</h5>
-                        
                         @if($flag)
+                            <h5 class="roomcell blue">{{$data[$property->id]}} room(s)</h5>
                             <div class="inner bluebox">
                         @else
+                            <h5 class="roomcell orange">{{$data[$property->id]}} room(s)</h5>
                             <div class="inner orangebox">
                         @endif
                         <!-- "#portfolioModal6" -->
