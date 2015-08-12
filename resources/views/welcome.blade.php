@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-<header>
+<header class="slowfade">
     <div class="container" >
         <div class="splash-text">
             <div class="splash-head">Welcome Home</div>
@@ -29,12 +29,12 @@
 <!-- entry section -->
 <section class="main-cont">
 
-    <div class="section-heading">
+    <div class="section-heading hideme">
         <div class="section-head">Find the house that's right for you.</div>
         <div class="section-sub">Choose from our approved and certified online listings.</div>
     </div>
 
-        <div class="container">
+        <div class="container hideme">
             <div class="row">
                 <div class="col-md-6 col-sm-6 portfolio-item">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
@@ -58,8 +58,7 @@
 </section>
 
 <section>
-
-    <div class="section-heading">
+    <div class="section-heading hideme">
         <div class="section-head">Organize everything you need to get started.</div>
         <div class="section-sub">Transportation, mobile phone, food packages, bedding and more.</div>
     </div>
@@ -67,7 +66,7 @@
         <!-- carousel implementation -->
 <!-- Carousel
     ================================================== -->
-<div id="myCarousel" class="carousel slide">
+<div id="myCarousel" class="carousel slide hideme">
   <!-- Carousel items -->
   <div class="carousel-inner">
      <div class="item active ad1">
@@ -103,7 +102,7 @@
 
 <!-- easy transactions -->
 <section>
-    <div class="section-heading">
+    <div class="section-heading hideme">
         <div class="section-head">Secure transactions made easy.</div>
         <div class="section-sub">Pay online to secure your home, and pay in person during your stay.</div>
     </div>
@@ -118,7 +117,7 @@
 <!-- Contact Section -->
 
 <section id="contact">
-    <div class="container">
+    <div class="container hideme">
         <div class="row">
             <div class="section-heading color-overide">
                 <div class="section-head color-white">

@@ -135,6 +135,7 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="{{asset('js/jquery-1.11.0.min.js')}}"></script>
     <script src="{{asset('js/lightbox.js')}}"></script>
+    <script src="{{asset('js/hideme.js')}}"></script>
 </div>
 
 @yield('modals')

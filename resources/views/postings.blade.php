@@ -2,11 +2,11 @@
 
 @section('content')
 
-<section class="postingbar">
+<section class="postingbar slowfade">
     <h2 id="ourpst">Our Postings</h2>
 </section>
 
-<section class="posting-top">
+<section class="posting-top slowfade">
     <h1>Take a look at these!</h1>
 </section>
 
@@ -14,7 +14,10 @@
     <div class="container">
         <div class="row">
         
-        <?php $flag = true; ?>
+        <?php 
+            $flag = true; 
+            $itemctr = 0;
+        ?>
         @foreach($data['pages'] as $property)
             @if($property->rooms>0)
                 <?php if($flag){
@@ -22,7 +25,11 @@
                 }else{
                     $class = "odd";
                 } ?>
-                    <div class="col-md-4 col-sm-6 property-item">
+                @if($itemctr > 2)
+                    <div class="col-md-4 col-sm-6 property-item hideme">
+                @else
+                    <div class="col-md-4 col-sm-6 property-item slowfade">
+                @endif
                         @if($flag)
                             <h5 class="roomcell blue">{{$data[$property->id]}} room(s)</h5>
                             <div class="inner bluebox">
@@ -43,7 +50,10 @@
                         </div>
                     </div>
                 </div>
-                <?php $flag = !$flag ?>
+                <?php 
+                    $flag = !$flag;
+                    $itemctr++;
+                ?>
             @endif
         @endforeach
     </div>
