@@ -32,7 +32,7 @@
     @yield('css-assets')
 </head>
 
-<body>
+<body class="slowfade">
     
 <div id="wrapper">
 <div id="header">

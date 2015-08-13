@@ -66,7 +66,7 @@
         <!-- carousel implementation -->
 <!-- Carousel
     ================================================== -->
-<div id="myCarousel" class="carousel slide hideme">
+<div id="myCarousel" class="carousel slide hideme" data-slide="carousel">
   <!-- Carousel items -->
   <div class="carousel-inner">
      <div class="item active ad1">
@@ -77,8 +77,8 @@
      </div>
      <div class="item ad2">
         <div class="carousel-caption">
-            <h4>Make your house home, before you arrive</h4>
-            <p>Choose a package of quality essential items to be delivered before you arrive. Come home to fresh sheets, utensils and all the cookware and dishes you need!</p>
+            <h4>Make your house your home</h4>
+            <p>Choose a package of essential items to be delivered before you arrive. Come home to fresh sheets, utensils and all the dishes you may need!</p>
          </div>
      </div>
      <div class="item ad3">

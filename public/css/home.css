@@ -2,6 +2,19 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
+/* Enable below selector when troubleshooting. Makes it easy to analyze span of elements and find
+    any hidden overflow. */
+/* 
+* { 
+    outline: 1px solid red;
+}
+*/
+
+footer {
+    overflow:hidden;
+}
+
 @media (max-width: 900px) {
     .navbar-header {
         float: none;
@@ -56,6 +69,7 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -66,6 +80,7 @@ footer, header, hgroup, menu, nav, section {
 }
 html, body {
   height: 100%;
+  width:100%;
 }
 @media(max-width: 899px){
     body {
@@ -77,11 +92,11 @@ html, body {
 }
 
 @media(min-width: 899px){
-body {
-    line-height: 1;
-    padding-bottom: 0 !important;
-    height: 100% !important;
-    padding-top: 70px !important;
+    body {
+        line-height: 1;
+        padding-bottom: 0 !important;
+        height: 100% !important;
+        padding-top: 70px !important;
     }
 }
 
@@ -354,11 +369,106 @@ button{
     border-radius: 15px;
     padding-bottom: 0px;
     top:40%;
-    bottom:40%;
+
+}
+
+.ad1 > .carousel-caption {
+    bottom:45%;
+}
+.ad2 > .carousel-caption,
+.ad3 > .carousel-caption {
+    bottom:37.5%;
 }
 
 .carousel-caption > p {
     padding: 0 10px 0 10px;
+    margin-top: 5px;
+}
+
+.carousel-caption > h4 {
+    text-decoration: underline;
+}
+
+@media(max-width:1440px) {
+    .ad1 > .carousel-caption {
+        bottom:42%;
+    }
+
+    .ad2 > .carousel-caption {
+        bottom:37%;
+    }
+
+    .ad3 > .carousel-caption {
+        bottom:33%;
+    }
+}
+
+@media(max-width:1280px) {
+    .ad1 > .carousel-caption {
+        bottom:38%;
+    }
+
+    .ad2 > .carousel-caption {
+        bottom:34%;
+    }
+
+    .ad3 > .carousel-caption {
+        bottom:33%;
+    }
+}
+
+@media(max-width:1024px) {
+    .ad2 > .carousel-caption {
+        bottom:32%;
+    }
+
+    .ad3 > .carousel-caption {
+        bottom:27.5%;
+    }
+}
+
+@media(max-width:414px) {
+    .carousel-caption {
+        bottom: 37.5%;
+    }
+
+    .ad2 > .carousel-caption {
+        bottom:31%;
+    }
+
+    .ad3 > .carousel-caption {
+        bottom:27%;
+    }
+}
+
+@media(max-width:384px) {
+    .ad2 > .carousel-caption {
+        bottom:27.5%;
+    }
+
+    .ad3 > .carousel-caption {
+        bottom:20%;
+    }
+}
+
+@media(max-width:375px) {
+    .ad2 > .carousel-caption {
+        bottom:27.5%;
+    }
+
+    .ad3 > .carousel-caption {
+        bottom:20%;
+    }
+}
+
+@media(max-width:320px) {
+    .ad2 > .carousel-caption {
+        bottom:22%;
+    }
+
+    .ad3 > .carousel-caption {
+        bottom:17.5%;
+    }
 }
 
 .ad1 {

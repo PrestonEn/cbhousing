@@ -16,8 +16,8 @@ $(document).ready(function() {
                 subtractor = 125;
             }
 
-            /* If the object is completely visible in the window, fade it */
-            if( bottom_of_window > (bottom_of_object - subtractor) ){
+            /* If the object is completely visible in the window, fade in */
+            if( bottom_of_window > (bottom_of_object - subtractor) ) {
                 $(this).animate({'opacity':'1'},500);       
             }
         }); 
