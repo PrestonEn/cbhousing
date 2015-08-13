@@ -61,24 +61,21 @@
                         <a class="page-scroll" href="{{ url('/properties') }}">Properties</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{ url('/about') }}">About Us</a>
+                        <a class="page-scroll" href="{{ url('/about') }}">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="{{ url('/#contact') }}">Contact Us</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="{{ url('/loyalty') }}">Loyalty</a>
                     </li>
 					@if (Auth::guest())
 						<li><a href="{{ url('/auth/login') }}">Login</a></li>
 						<li><a href="{{ url('/auth/register') }}">Register</a></li>
 					@else
+                        <li>
+                            <a href="{{url('/user/'.Auth::user()->id)}}">{{ Auth::user()->name }} </a> 
+                        </li>
 						<li>
                             <a href="{{ url('/auth/logout') }}">Logout</a></li>  
                         </li>
-                        <li>
-							<a href="{{url('/user/'.Auth::user()->id)}}">{{ Auth::user()->name }} </a> 
-						</li>
 					@endif
                 </ul>
             </div>

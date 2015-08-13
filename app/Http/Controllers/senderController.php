@@ -25,7 +25,7 @@ class senderController extends Controller {
 		{
 		    $message->to('requests@cbhousing.ca', $data['name'])->subject($data['name'].' question');
 		});	
-		session()->flash('message', 'Your message has been sent! Watch for a reply form @cbhousing.ca!');
+		session()->flash('message', 'Your message has been sent! Watch out for a reply from @cbhousing.ca!');
 		session()->flash('title', 'Thanks for the email!');
 
 		return redirect('/#contact');

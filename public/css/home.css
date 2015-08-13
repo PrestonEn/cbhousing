@@ -349,14 +349,26 @@ button{
     -o-background-size: cover;
     background-size: cover;
 }
+.carousel-caption {
+    background: rgba(0,0,0,0.40);
+    border-radius: 15px;
+    padding-bottom: 0px;
+    top:40%;
+    bottom:40%;
+}
+
+.carousel-caption > p {
+    padding: 0 10px 0 10px;
+}
+
 .ad1 {
-    background: url(../img/home-images/AirportPickup.jpg) no-repeat center;
+    background: url(../img/Airport.jpg) no-repeat bottom;
 }
 .ad2 {
-    background: url(../img/home-images/OddsandEnds.jpg) no-repeat center; 
+    background: url(../img/house-home.jpg) no-repeat center; 
 }
 .ad3 {
-    background: url(../img/Starter-Packages.jpg) no-repeat center; 
+    background: url(../img/Support.jpg) no-repeat center; 
 }
 
 #portfolio .portfolio-item {
@@ -521,7 +533,6 @@ header {
     height:100vh; /* Image fills viewport, scroll instantly reveals blue bar */
     padding-top: 30vh;
     padding-bottom: 30vh;
-    background-repeat: none;
 
     -webkit-background-size: cover;
        -moz-background-size: cover;
@@ -709,8 +720,7 @@ section.about {
 }
 
 .main-cont {
-    padding-top: 40px;
-    padding-bottom:0px;
+    padding:20px 0 20px 0;
 }
 
 #myCarousel{
