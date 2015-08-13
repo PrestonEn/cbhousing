@@ -4,7 +4,12 @@
 <header class="slowfade">
     <div class="container" >
         <div class="splash-text">
-            <div class="splash-head">Welcome Home</div>
+            <!-- woozy.js text slider here-->
+            <div class="slider">
+                <div class="slide-1">
+                    <div class="splash-head">Welcome Home</div>
+                </div>
+            </div>
             <div class="splash-sub">Experience off-campus living the right way.</div>
             <a href="{{ url('/about') }}" class="page-scroll btn btn-xl">Tell Me More</a>
         </div>

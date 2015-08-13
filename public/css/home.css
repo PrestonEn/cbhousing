@@ -680,6 +680,7 @@ header {
 }
 
 
+
 .spalsh-text{ /* where is this used? spalsh? not splash? */
 	margin: 0 auto;
     padding-top: 10px;
@@ -903,7 +904,7 @@ section.about {
         -ms-animation: fadein 1.65s; /* Internet Explorer */
          -o-animation: fadein 1.65s; /* Opera < 12.1 */
             animation: fadein 1.65s;
-}
+}  /*fadein 3s ease-in-out infinite alternate;*/
 
 .postingbar h1{
 vertical-align: center;
