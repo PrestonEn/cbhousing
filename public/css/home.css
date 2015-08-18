@@ -471,14 +471,15 @@ button{
     }
 }
 
+/* Carousel images. *-comp are compressed versions of high res, to reduce load time. */
 .ad1 {
-    background: url(../img/Airport.jpg) no-repeat bottom;
+    background: url(../img/Airport-comp.jpg) no-repeat bottom;
 }
 .ad2 {
     background: url(../img/house-home.jpg) no-repeat center; 
 }
 .ad3 {
-    background: url(../img/Support.jpg) no-repeat center; 
+    background: url(../img/Support-comp.jpg) no-repeat center; 
 }
 
 #portfolio .portfolio-item {
@@ -628,6 +629,11 @@ button{
     .navbar-brand {
         padding-top: 5px;
     }
+}
+
+/*default is 0, to be changed via JS later. */
+.slider {
+    opacity: 1;
 }
 
 /*Splash page styles*/

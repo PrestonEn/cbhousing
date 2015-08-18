@@ -30,6 +30,19 @@
         .floatLeft{ color: #f9a155 !important; }
     </style>
     @yield('css-assets')
+    
+    <!-- App Insights via Azure JS code generation -->
+    <script type="text/javascript">
+        var appInsights=window.appInsights||function(config){
+            function s(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},r=document,f=window,e="script",o=r.createElement(e),i,u;for(o.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",r.getElementsByTagName(e)[0].parentNode.appendChild(o),t.cookie=r.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)s("track"+i.pop());return config.disableExceptionTracking||(i="onerror",s("_"+i),u=f[i],f[i]=function(config,r,f,e,o){var s=u&&u(config,r,f,e,o);return s!==!0&&t["_"+i](config,r,f,e,o),s}),t
+        }({
+            instrumentationKey:"846f459a-61f5-488a-b129-30d7b96d45cd"
+        });
+        
+        window.appInsights=appInsights;
+        appInsights.trackPageView();
+    </script>
+    <!-- App Insights via Azure JS code generation -->
 </head>
 
 <body class="slowfade">
@@ -133,7 +146,8 @@
     <script src="{{asset('js/jquery-1.11.0.min.js')}}"></script>
     <script src="{{asset('js/lightbox.js')}}"></script>
     <script src="{{asset('js/hideme.js')}}"></script>
-    <script src="{{asset('js/woozy.js')}}"></script>
+    <!-- Still testing slider for Welcome Home banner. -->
+    <!-- <script src="{{asset('js/slider.js')}}"></script> -->
 </div>
 
 @yield('modals')
